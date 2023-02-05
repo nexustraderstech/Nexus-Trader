@@ -1,2 +1,10 @@
 # Nexus-Trader
-[x] (for checked checkbox)
+
+<span style="color: green"> Goals </span>
+
+- [ ] Navbar
+      - [x] Navbar
+      - [] Navbar - responsive
+- [ ] Footer
+      - [] Footer
+      - [] Footer - responsive
