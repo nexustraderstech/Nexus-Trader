@@ -1,10 +1,7 @@
 # Nexus-Trader
 
-<span style="color: green"> Goals </span>
+<h2 style="color: green"> Goals </span>
+<span style="color: purple"> Sameer </span>
 
 - [ ] Navbar
-      - [ x ] Navbar
-      - [ ] Navbar - responsive
 - [ ] Footer
-      - [ ] Footer
-      - [ ] Footer - responsive
