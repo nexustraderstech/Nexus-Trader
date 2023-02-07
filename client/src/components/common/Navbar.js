@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { GrMenu, GrClose } from 'react-icons/gr';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import './Navbar.css';
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
@@ -24,7 +26,7 @@ const Navbar = () => {
             <NavLink to='/courses'>Courses</NavLink>
           </li>
           <li>
-            <NavLink to='/courses'>Blog</NavLink>
+            <NavLink to='/blog'>Blog</NavLink>
           </li>
           <li>
             <NavLink to='/testomonial'>Testomonial</NavLink>
@@ -33,13 +35,7 @@ const Navbar = () => {
         <button className='btn-joinNow'>Join Now</button>
 
         <div className='btn-toggle' onClick={toggler}>
-          <span>
-            {isNavOpen ? (
-              <GrMenu size={20} color='white' />
-            ) : (
-              <GrClose style={{ color: 'white' }} size={20} />
-            )}
-          </span>
+          {isNavOpen ? <MenuIcon /> : <CloseIcon />}
         </div>
       </div>
     </div>
