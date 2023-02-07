@@ -6,31 +6,31 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isActive, setIsActive] = useState(null);
   const toggler = () => {
     setIsNavOpen(!isNavOpen);
   };
+  const Links = [
+    { name: 'Home', navLink: '/' },
+    { name: 'About us', navLink: '/about' },
+    { name: 'Courses', navLink: '/courses' },
+    { name: 'Blog', navLink: '/blog' },
+    { name: 'Testimonial', navLink: '/testimonial' },
+  ];
   return (
     <div>
       <div className={isNavOpen ? 'nav' : 'nav expand'}>
         <div className='logo'>
           <img src='assets/images/logo.png' alt='logo' />
         </div>
+
+        {/* Active Links */}
         <ul className='navList'>
-          <li>
-            <NavLink to='/'>Home</NavLink>
-          </li>
-          <li>
-            <NavLink to='/about'>About</NavLink>
-          </li>
-          <li>
-            <NavLink to='/courses'>Courses</NavLink>
-          </li>
-          <li>
-            <NavLink to='/blog'>Blog</NavLink>
-          </li>
-          <li>
-            <NavLink to='/testomonial'>Testomonial</NavLink>
-          </li>
+          {Links.map((link, index) => (
+            <li key={index} className={index === isActive ? 'active' : ''}>
+              <NavLink to={link.navLink}>{link.name}</NavLink>
+            </li>
+          ))}
         </ul>
         <button className='btn-joinNow'>Join Now</button>
 

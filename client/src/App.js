@@ -4,7 +4,7 @@ import About from './pages/about/About';
 import Courses from './pages/course/Courses';
 import Home from './pages/home/Home';
 import Blog from './pages/blog/Blog';
-import Testomonial from './pages/testo/Testomonial';
+import Testimonial from './pages/testo/Testimonial';
 import Layout from './components/Layout';
 import './App.css';
 
@@ -18,7 +18,7 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='courses' element={<Courses />} />
             <Route path='blog' element={<Blog />} />
-            <Route path='testomonial' element={<Testomonial />} />
+            <Route path='testimonial' element={<Testimonial />} />
           </Route>
         </Routes>
       </Router>
