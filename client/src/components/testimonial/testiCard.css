@@ -8,6 +8,11 @@
   padding: 0.5rem;
   gap: 1rem;
   margin: 0.5rem;
+
+  transition: all ease 0.5s;
+}
+.testimonial-card img {
+  transition: all ease 0.5s;
 }
 .test-card-title {
   color: white;
@@ -36,5 +41,6 @@
   }
   .testimonial-card img {
     width: 330px;
+    transition: all ease 0.5s;
   }
 }
