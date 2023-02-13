@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Blog.css';
+import React from 'react';
+import './Blog.scss';
 import BlogCard from '../../components/blogs/BlogCard';
 
 const Blog = () => {

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
+import './Navbar.scss';
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
@@ -10,6 +11,7 @@ const Navbar = () => {
   const toggler = () => {
     setIsNavOpen(!isNavOpen);
   };
+  const navigate = useNavigate();
   const Links = [
     { name: 'Home', navLink: '/' },
     { name: 'About us', navLink: '/about' },
@@ -32,7 +34,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button className='btn-joinNow'>Join Now</button>
+        <button className='btn-joinNow' onClick={() => navigate('/login')}>
+          Join Now
+        </button>
 
         <div className='btn-toggle' onClick={toggler}>
           {isNavOpen ? <MenuIcon /> : <CloseIcon />}

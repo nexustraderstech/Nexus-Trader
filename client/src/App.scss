@@ -18,6 +18,16 @@ a {
 li {
   list-style: none;
 }
+label {
+  color: #fff;
+}
+p {
+  color: inherit;
+}
+input {
+  outline: none;
+  padding: 0.6rem 0.8rem;
+}
 
 @media (max-width: 1400px) {
   * {

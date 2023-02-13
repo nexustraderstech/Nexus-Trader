@@ -1,5 +1,5 @@
 import React from 'react';
-import './testimonial.css';
+import './testimonial.scss';
 import TestiCard from './../../components/testimonial/TestiCard';
 import { TestimonialData } from './TestimonialData';
 
