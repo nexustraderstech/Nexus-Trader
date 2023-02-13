@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './BlogCard.css';
+import './BlogCard.scss';
 import VisibilityIconOutlined from '@mui/icons-material/VisibilityOutlined';
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';

@@ -1,0 +1,95 @@
+body {
+  background: #141416;
+  color: #252525;
+}
+label {
+  color: #252525;
+  display: block;
+}
+input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ffc940;
+  border-radius: 10px;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background: white;
+    width: 600px;
+
+    img {
+      width: 300px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding: 0 1rem;
+
+      p {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .email {
+        margin-top: 2rem;
+      }
+      .passwd {
+        margin-top: 1.5rem;
+      }
+      .checkbox {
+        margin-top: 1.5rem;
+        display: flex;
+
+        input {
+          width: auto;
+          order: 1;
+          padding: 0 0.2rem;
+        }
+        label {
+          padding: 0 0.2rem;
+          order: 2;
+          font-size: 12px;
+        }
+      }
+      button {
+        margin-top: 1.5rem;
+        padding: 0.6rem;
+        border: none;
+        background: #ffc940;
+      }
+      span {
+        margin-top: 1rem;
+        font-size: 14px;
+        font-weight: normal;
+
+        a {
+          text-decoration: underline;
+          padding: 0 0.3rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    display: none;
+  }
+}

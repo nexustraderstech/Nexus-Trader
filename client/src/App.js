@@ -6,7 +6,9 @@ import Home from './pages/home/Home';
 import Blog from './pages/blog/Blog';
 import Testimonial from './pages/testo/Testimonial';
 import Layout from './components/Layout';
-import './App.css';
+import './App.scss';
+import Login from './pages/auth/Login';
+import SignUp from './pages/auth/SignUp';
 
 function App() {
   return (
@@ -18,8 +20,11 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='courses' element={<Courses />} />
             <Route path='blog' element={<Blog />} />
-            <Route path='testimonial' element={<Testimonial />} />
+            <Route path='/testimonial' element={<Testimonial />} />
           </Route>
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='*' element={'404'} />
         </Routes>
       </Router>
     </>
