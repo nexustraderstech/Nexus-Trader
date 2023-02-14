@@ -1,6 +1,8 @@
 import React from 'react';
 import "./home.scss";
-import Card from "../../components/Home Cards/Card"
+import Card from "../../components/Home Cards/Card";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Home = () => {
 
@@ -66,7 +68,7 @@ const Home = () => {
             {
               card_data.map((item, index)=>(
                 <Card
-                  id={index}
+                  key={index}
                   img={item.img}
                   title={item.title}
                   content={item.content}
@@ -91,17 +93,63 @@ const Home = () => {
           in real-time.</p>
           <button className='button'>Enroll Now</button>
         </div>
+        
         <div className="col_2">
-          
+            {/*Using Swiper js*/}
         </div>
       </div>
 
       {/*open Demat account*/}
+
+      <div className="demat">
+          <div className="content">
+            <h1>OPEN FREE DEMAT ACCOUNT WITH IIFL</h1>
+            <button className="button"> Open an Account</button>
+            <div className="hr"></div>
+            </div>
+      </div>
+
       {/*testimonials*/}
+      
+      <div className="testi">
+        <h1>Testimonials</h1>
+        {/*Using Swiper js*/}
+      </div>
+
       {/*Our Partners*/}
+
       {/*Visions*/}
+
+      <div className="home_visions">
+            <div className="col_1">
+              <p> A FEW MONTHS OF LEARNING HOW TO TRADE CAN PRODUCE A LIFETIME OF FREEDOM.</p>
+            </div>
+            <div className="col_2">
+              <h1>VISION</h1>
+              <p>
+                We aim to popularize the concepts of stock trading and investing to enable the youth to benefit from them. Our Premium courses will be really helpful to those who want to learn about the stock markets and create a passive source of income through it.</p>
+              <button>Get Started</button>
+            </div>
+      </div>
+      
       {/*Blogs*/}
+      <div className="home_blogs">
+        <h1>BLogs</h1>
+        {/*Using Swiper js*/}
+      </div>
+      
       {/*About Us*/}
+      <div className="home_about">
+          <div className="col_1">
+              <h1>Mst. Hitesh Gadling & <br /> Mst. Sujoy Bhattacharya</h1>
+              <h2>Founders of Nexus Traders.</h2>
+              <p>Professional Traders and Investors in the Stock Market for the past 2 years. They have successfully trained more than 100 students And the aim is to popularize the concept of stock trading & investing to enable the youth to benefit from it. </p>
+              <button>To Know More<ArrowForwardIosIcon style={{backgroundColor:"transparent", fontSize:"15px", color: "#daa520"}}/></button>
+          </div>
+          <div className="col_2">
+            <img src="./assets/images/sujoy_hitesh_2.jpg" alt="" />
+          </div>
+      </div>
 
     </div>
   )
