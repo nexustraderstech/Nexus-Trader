@@ -1,0 +1,172 @@
+$cinzel: 'Cinzel', serif;
+$Varela_round: 'Varela Round', sans-serif;
+
+.courses_container{
+    color: white;
+
+    .header{
+        height: 95vh;
+        padding: 0;
+
+        img{
+            width: 100%;
+        }
+
+        .subDiv{
+            width: 60%;
+            background-color: #0e0e0f;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 100px;
+
+            transform: translate(60%, -50%);
+
+            .content{
+
+                h1{
+                    font-family: $cinzel;
+                    font-size: 60px;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                    // background-color: transparent;
+                }
+    
+                p{
+                    
+                    font-size: 20px;
+                    font-family: $Varela_round;
+                    line-height: 30px;
+                }
+            }
+            }
+
+    }
+
+    .demat{
+        width: 100%;
+        background-color: #daa520;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        // gap:20px;
+        padding: 50px;
+
+        .content{
+            background-color: #141416;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            .button{
+                margin: 30px 0 10px 0;
+                background-color: #daa520;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: $Varela_round;
+                // font-weight: bold;
+            }
+
+            .hr{
+                width: 20px;
+                border: 1px solid #636363;
+            }
+        }
+    }
+
+    .courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        gap: 20px;
+        
+
+        .platinum{
+
+            width: 100%;
+            display: flex;
+            background-color: #0e0e0f;
+            border-radius: 50px;
+            
+            .col_1{
+                width: 100%;
+                padding: 10px;
+                
+                video{
+                    // background-color: transparent;
+                    width: 100%;
+                    border-radius: 50px 0 0 50px;
+                    
+                }
+
+            }
+            .col_2{
+                width: 100%;
+                // border:1px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .detail{
+                    margin-left: 50px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                
+                .syllabus{
+                    margin-top: 20px;
+                    margin-left: 65px;
+                    line-height: 25px;
+                    // margin: 25px;
+                }
+            }
+        }
+        .advance{
+            width: 100%;
+            display: flex;
+            background-color: #0e0e0f;
+            border-radius: 50px;
+            
+            .col_1{
+                width: 100%;
+                padding: 10px;
+                
+                video{
+                    // background-color: transparent;
+                    width: 100%;
+                    border-radius: 50px 0 0 50px;
+                    
+                }
+
+            }
+            .col_2{
+                width: 100%;
+                // border:1px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .detail{
+                    margin-left: 50px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                
+                .syllabus{
+                    margin-top: 20px;
+                    margin-left: 65px;
+                    line-height: 25px;
+                    // margin: 25px;
+                }
+            }
+        }
+    }
+}

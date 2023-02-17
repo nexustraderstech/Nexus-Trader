@@ -1,34 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+/*
+1. "Home" -> "Nexus TYraders" = Cinzel
+2. ^ subtitle = Varela Round Regular
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Text+Me+One&family=Varela+Round&display=swap');
+
+$cinzel: 'Cinzel', serif;
+$Varela_round: 'Varela Round', sans-serif;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  background-color: #141416;
-  color: #fff;
+  -o-transition: all 1s ease; 
+  transition: all 1s ease;    
+  // background-color: #141416;
+  background-color: transparent;
+  // color: #fff;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  background-color: #141416;
+  font-family: $Varela_round;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-li {
-  list-style: none;
+// h1, h2, h3, p, div, ul, li {
+//   background-color: transparent;
+// }
+
+h1 {
+  font-family: $cinzel;
 }
-label {
-  color: #fff;
-}
-p {
-  color: inherit;
-}
-input {
-  outline: none;
-  padding: 0.6rem 0.8rem;
+
+p{
+  font-family: $Varela_round;
 }
 
 @media (max-width: 1400px) {

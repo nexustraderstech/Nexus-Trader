@@ -1,0 +1,179 @@
+$cinzel: 'Cinzel', serif;
+$Varela_round: 'Varela Round', sans-serif;
+$text_color: rgb(154, 154, 154);
+
+.footer_container{
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: white;
+
+    .top{
+        display: flex;
+
+        // Contact Us
+        .col_1{
+            // border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            
+    
+            h1{
+                font-family: $cinzel;
+                line-height: 35px;
+                &:nth-child(1){       
+                    color: #daa520;
+                }
+            }
+    
+            P{
+                margin-top: 10px;
+                color: $text_color;
+            }
+    
+            .item{
+                line-height: 25px;
+                text-decoration: underline;
+            }
+        }
+
+        // Tell Us
+        .col_2{
+            // border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            // gap: 10px;
+
+            h1{
+                font-family: $cinzel;
+                color: #daa520;
+                line-height: 35px;
+            }
+            
+            form{
+                width: 100%;
+                // height: 100px;
+                // border: 1px solid red;
+                background-color: #daa520;
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 15px;
+                row-gap: 15px;
+                column-gap: 15px;
+                font-size: 15px;
+                
+                
+                .col_1{
+                    width: 50%;
+                    // padding: 10px;
+                    width: 100%;
+                    // background-color: transparent;
+                    gap: 10px;
+                    // border: 1px solid white;
+                    
+                    input{
+                        // background-color: transparent;
+                        border: 1px solid black;
+                        padding: 5px;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                    
+                }
+                
+                .col_2{
+                    // background-color: transparent;
+                    width: 100%;
+                    
+                    input{
+                        // background-color: transparent;
+                        border: 1px solid black;
+                        padding: 5px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    textarea{
+                        padding: 5px;
+                        border: 1px solid black;
+                        // background-color: transparent;
+                    }
+                }
+                
+                .sub_button{
+                    background-color: transparent;
+                    // background-color: red;
+                    grid-column: 1 / span 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    input{
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        width: 100px;
+                        color: white;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+
+        // Know Us
+        .col_3{
+            // border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+
+            h1{
+                font-family: $cinzel;
+                line-height: 35px;
+                &:nth-child(2){       
+                    color: #daa520;
+                }
+            }
+
+            .content{
+                text-align: center;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                p{
+                    margin-top: 10px;
+                    text-decoration: underline;
+                    color: $text_color;
+                    line-height: 25px;
+                }
+            }
+        }
+    
+        .underline{
+            width: 50px;
+            border: 3px solid white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .bottom{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: $text_color;
+        text-align: center;
+    }
+    
+    
+}

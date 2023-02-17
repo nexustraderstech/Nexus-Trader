@@ -1,17 +1,28 @@
 $h1_fs: 90px;
 $h2_fs: 30px;
-$normal_fs: 12px;
-$medium_fs: 16px;
+$normal_fs: 17px;
+$medium_fs: 20px;
+
+$cinzel: 'Cinzel', serif;
+$Varela_round: 'Varela Round', sans-serif;
+
+$home_sample_img_1: "..//..//..//public//assets//images//home_sample_img_1.png";
+$home_sample_img_2: "..//..//..//public//assets//images//home_sample_img_2.png";
+$home_sample_img_3: "..//..//..//public//assets//images//sample_image_4.png";
+
 
 
 .container_home{
+    color:white;
 
     .home_header{
         padding: 0;
-        height: 230vh;
+        height: 210vh;
 
         .blurred_background{
-            background-image: url("..//..//..//public//assets//images//home_sample_img_1.png");
+            // $background-max-size: 200%;
+
+            background-image: url($home_sample_img_1);
             background-position: center;
             background-size: cover;
             filter: blur(2px);
@@ -24,18 +35,23 @@ $medium_fs: 16px;
 
             position: absolute;
             top: 150px;
-
             width: 100%;
             padding: 100px;
-            background-color: transparent;
+            // background-color: transparent;
 
             h1{
                 font-size: $h1_fs;
+                font-family: $cinzel;
                 font-weight: normal;
             }
             
             h2{
                 font-size: $h2_fs;
+            }
+
+            p{
+                line-height: 20px;
+                font-size: $normal_fs;
             }
 
             .button{
@@ -48,57 +64,55 @@ $medium_fs: 16px;
 
             *{
                 margin-top: 20px;
-                background-color: transparent;
+                // background-color: transparent;
             }
         }
 
         .subDiv_2{
-            border: 2px solid white;
-            margin: 50px;
+            border: 3px solid rgb(138, 138, 138);
+            border-radius: 10px;
+            margin: 100px;
             display: flex;
+            background-color: #151516;
 
             transform: translate(0, -50%);
 
             .col_1{
-                background-image: url("..//..//..//public//assets//images//home_sample_img_2.png");
+                background-image: url($home_sample_img_2);
                 background-position: center;
                 background-size: cover;
 
                 display: flex;
                 align-items: center;
-                width: 50%;
+                justify-content: center;
+                width: 40%;
                 padding: 50px;
-                border-right: 1px solid white;
+                border-right: 1px solid rgb(138, 138, 138);
 
                 img{
-                    width: 100%;
-                    background-color: transparent;
+                    width: 80%;
+                    // background-color: transparent;
                 }
             }
 
             .col_2{
-                width: 50%;
-                border-left: 1px solid white;
-                padding: 10px;
+                width: 60%;
+                border-left: 1px solid rgb(138, 138, 138);
+                padding: 50px;
 
                 display: grid;
                 grid-template-columns: auto auto;
-                column-gap: 10px;
-                row-gap: 10px;
+                column-gap: 50px;
+                row-gap: 50px;
 
             }
         }
     }
 
     .home_courses{
-        border: 1px solid white;
+        // border: 1px solid white;
         display: flex;
         padding: 50px;
-
-
-        *{
-            background-color: transparent;
-        }
 
         .col_1{
             width: 50%;
@@ -117,10 +131,28 @@ $medium_fs: 16px;
                 font-weight: bold;
             }
         }
-
+        
         .col_2{
             width: 50%;
-            
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            .mySwiper{
+                border: 1px solid white;
+                width: 10%;
+                
+                .card{
+                    border: 1px solid red;
+                    width: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    img{
+                        width: 40%;
+                    }
+                }
+            }
         }
 
         
@@ -166,10 +198,45 @@ $medium_fs: 16px;
         justify-content: center;
         align-items: center;
     }
+    
+    .stats{
+        background-image: url($home_sample_img_3);
+        background-position: bottom;
+        background-size: 100%;
+        width: 100%;
+        height: 680px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 50px;
+        
+        .top{
+            font-size: 30px;
+        }
+        
+        .bottom{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+            h1{
+                color: #daa520;
+                font-size: 80px
+            }
+            
+            p{
+                font-size: 30px
+            }
+
+        }
+    }
 
     .home_visions{
-        padding: 50px;
-        border: 1px solid white;
+        padding: 10px;
+        // border: 1px solid white;
         display: flex;
 
         .col_1{
@@ -177,10 +244,13 @@ $medium_fs: 16px;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 50px;
+            position: relative;
 
             p{
-                width: 50%;
+                position: absolute;
+                font-size: 30px;
+                font-weight: bold;
+                // width: 100%;
                 text-align: center;
             }
         }
@@ -195,10 +265,12 @@ $medium_fs: 16px;
 
             p{
                 width: 60%;
+                font-size: 18px;
             }
-
+            
             button{
                 // margin: 30px 0 10px 0;
+                font-size: 18px;
                 background-color: #daa520;
                 padding: 10px;
                 border-radius: 10px;
@@ -217,7 +289,7 @@ $medium_fs: 16px;
 
     .home_about{
         padding: 50px;
-        border: 1px solid white;
+        // border: 1px solid white;
         display: flex;
 
         .col_1{

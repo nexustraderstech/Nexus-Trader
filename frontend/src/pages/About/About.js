@@ -3,6 +3,11 @@ import "./about.scss";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+const sample_img_1 = "./assets/images/sample_image_1.png";
+const hitesh = "./assets/images/hitesh.png";
+const sujoy = "./assets/images/sujoy.png";
+const sujoy_hitesh = "./assets/images/sujoy_hitesh_2.jpg";
+
 const AboutUs = () => {
   return (
     <div className="about_container">
@@ -34,7 +39,7 @@ const AboutUs = () => {
       </div>
 
       <div className="center_img">
-        <img src="./assets/images/sample_image_1.png" alt="sample" />
+        <img src={sample_img_1} alt="sample" />
       </div>
 
       <div className="meet_the_team">
@@ -47,7 +52,7 @@ const AboutUs = () => {
         {/*Hitesh Card*/}
         <div className="person_card">
           <div className="img_div" id="hitesh_img">
-            <img src="./assets/images/hitesh.png" alt="" />
+            <img src={hitesh} alt="" />
           </div>
 
           <div className="content" id="hitesh_content">
@@ -115,7 +120,7 @@ const AboutUs = () => {
           </div>
 
           <div className="img_div" id="hitesh_img">
-            <img src="./assets/images/sujoy.png" alt="" />
+            <img src={sujoy} alt="" />
           </div>
 
         </div>
@@ -128,7 +133,7 @@ const AboutUs = () => {
           S<span className="small_text">TORY </span>
         </h2>
 
-        <img src="./assets/images/sujoy_hitesh_2.jpg" alt=""/>
+        <img src = {sujoy_hitesh} alt=""/>
 
         <div className="content">
           <p>

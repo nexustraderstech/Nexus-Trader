@@ -1,6 +1,7 @@
 .about_container{
     margin: 0;
     padding: 0;
+    color: white;
 
     .header{
         // border: 1px solid white;
@@ -131,44 +132,6 @@
                 line-height: 30px;
                 font-size: 20px;
             }
-        }
-    }
-}
-
-@media (max-width: 900px) {
-    .about_container{
-
-        .meet_the_team{
-
-            .person_card{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 30px;
-        
-                .content{
-                    width: 100%;
-                    
-                    h3{
-                        // font-size: 30px;
-                        text-align: center;
-                    }
-                }
-        
-                #hitesh_img{
-                    order:0
-                }
-                #hitesh_content{
-                    order:1
-                }
-                #sujoy_img{
-                    order:0
-                }
-                #sujoy_content{
-                    order:4
-                }
-            }
-
         }
     }
 }
