@@ -2,12 +2,8 @@ import React from 'react';
 import './home.scss';
 import Card from '../../components/Home Cards/Card';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
 const logo_with_signature = './assets/images/logo_with_signature.png';
 const sujoy_hitesh_2 = './assets/images/sujoy_hitesh_2.jpg';
-const advanced_course = './assets/images/advanced_course.png';
-const platinum_course = './assets/images/platinum_course.png';
-const smaple_img_2 = './assets/images/sample_image_2.jpg';
 const smaple_vid = './assets/images/sample_vid_2.mp4';
 
 const Home = () => {
@@ -63,12 +59,12 @@ const Home = () => {
           <button className='button'>Enroll Now</button>
         </div>
 
-        {/* <div className="subDiv_2">
-          <div className="col_1">
-            <img src={logo_with_signature} alt="logo 2" />
+        <div className='subDiv_2'>
+          <div className='col_1'>
+            <img src={logo_with_signature} alt='logo 2' />
           </div>
 
-          <div className="col_2">
+          <div className='col_2'>
             {card_data.map((item, index) => (
               <Card
                 key={index}
@@ -78,12 +74,12 @@ const Home = () => {
               />
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/*courses*/}
 
-      <div className='home_courses'>
+      {/* <div className='home_courses'>
         <div className='col_1'>
           <h1>Courses</h1>
           <p>
@@ -98,7 +94,7 @@ const Home = () => {
         </div>
 
         <div className='col_2'></div>
-      </div>
+      </div> */}
 
       {/*open Demat account*/}
 

@@ -19,11 +19,11 @@
     }
 
     .small_text {
-      font-size: 40px;
+      font-size: 50px;
     }
 
     .subTitle {
-      font-size: 25px;
+      font-size: 30px;
       letter-spacing: 5px;
     }
 
@@ -135,5 +135,31 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .about_container {
+    .header {
+      h1 {
+        font-size: 40px;
+      }
+      .small_text {
+        font-size: 30px;
+      }
+      .subTitle {
+        font-size: 16px;
+      }
+      .text {
+        font-size: 16px;
+        padding: 1rem;
+      }
+      .meet_the_team {
+      }
+    }
+    h2 {
+      font-size: 40px;
+
+      .small_text {
+        font-size: 30px;
+      }
+    }
+  }
 }

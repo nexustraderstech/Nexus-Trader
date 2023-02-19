@@ -30,6 +30,7 @@
 
 .nav .btn-joinNow {
   color: #daa520;
+  color: #daa520;
   background: none;
   padding: 0.8rem 1.8rem;
   border: 2px solid #daa520;
@@ -40,9 +41,8 @@
 
 .btn-toggle {
   display: none;
-  fill: #fff;
+  fill: #daa520;
   /* background: red; */
-  color: white;
 }
 
 @media (max-width: 1400px) {
@@ -91,7 +91,7 @@
     position: absolute;
     top: 2.5rem;
     right: 2rem;
-    color: white;
+    color: #daa520;
   }
   .nav.expand {
     height: 100vh;

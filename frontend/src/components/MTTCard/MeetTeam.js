@@ -26,14 +26,14 @@ const MeetTeam = ({
         </h3>
         <p className='subTitle'>{subtitle}</p>
         <p className='text'>{text}</p>
-        <p>
+        <div className='icon-grp'>
           <span className='icon'>
             <InstagramIcon />
           </span>
           <span className='icon'>
             <LinkedInIcon />
           </span>
-        </p>
+        </div>
       </div>
     </div>
   );
