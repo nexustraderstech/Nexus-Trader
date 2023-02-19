@@ -7,7 +7,6 @@ const Login = () => {
     <>
       <div className='login-form'>
         <div className='box'>
-          <img src='assets/images/login.jpeg' alt='' />
           <form>
             <p>Login</p>
             <div className='email'>

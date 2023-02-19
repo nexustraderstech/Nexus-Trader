@@ -5,32 +5,32 @@ $medium_fs: 20px;
 $cinzel: 'Cinzel', serif;
 $varela_round: 'Varela Round', sans-serif;
 
-.card_container{
-    border-radius: 10px;
-    padding: 30px;
-    // width: 100%;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    background-color: #1b1c1e;
-    gap: 10px;
+.card_container {
+  border-radius: 10px;
+  padding: 30px;
+  // width: 100%;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: baseline;
+  background-color: #1b1c1e;
+  gap: 10px;
 
-    .card_img{
-        width: 50px;
-    }
+  .card_img {
+    width: 50px;
+  }
 
-    .card_title{
+  .card_title {
+    color: #daa520;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: $cinzel;
+  }
 
-        color: #daa520;
-        font-weight: bold;
-        font-size: 20px;
-        font-family: $cinzel;
-    }
-
-    .card_content{
-        width: 80%;
-        font-size: 15px;
-        font-family: $varela_round;
-    }
+  .card_content {
+    width: 80%;
+    font-size: 15px;
+    font-family: $varela_round;
+  }
 }

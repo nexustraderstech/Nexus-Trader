@@ -1,0 +1,141 @@
+.Mttcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+
+.Mttcard img {
+  width: 50%;
+  order: 1;
+}
+
+.MttInfo {
+  width: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 3rem;
+  order: 1;
+}
+
+.MttInfo h3 {
+  font-size: 50px;
+  color: #daa520;
+  letter-spacing: 10px;
+}
+
+.MttInfo h3 .small_text {
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: #daa520;
+}
+
+.MttInfo .subTitle {
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.MttInfo .text {
+  line-height: 20px;
+  letter-spacing: 2px;
+  // width: 80%;
+}
+
+.MttInfo .icon {
+  margin: 0 10px;
+}
+
+@media (max-width: 1400px) {
+  .Mttcard {
+    justify-content: start;
+  }
+  .Mttcard img {
+    width: 600px;
+    margin-top: 1rem;
+  }
+
+  .MttInfo h3 {
+    font-size: 30px;
+    color: #daa520;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+
+  .MttInfo h3 .small_text {
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #daa520;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Mttcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // width: 90%;
+  }
+
+  .Mttcard img {
+    width: 400px;
+    order: 1;
+  }
+  .MttInfo {
+    width: 90%;
+    order: 2;
+  }
+  .MttInfo h3 {
+    font-size: 30px;
+    color: #daa520;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .MttInfo h3 .small_text {
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #daa520;
+  }
+}
+
+@media (max-width: 800px) {
+  .Mttcard img {
+    width: 300px;
+    order: 1;
+  }
+
+  .MttInfo {
+    order: 2;
+    width: 90%;
+    overflow: auto;
+  }
+
+  .MttInfo h3 {
+    font-size: 30px;
+    color: #daa520;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .MttInfo h3 .small_text {
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #daa520;
+  }
+}

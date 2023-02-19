@@ -10,6 +10,7 @@ import Layout from './components/Layout';
 import './App.scss';
 import Login from './features/auth/Login';
 import SignUp from './features/auth/SignUp';
+import Meet from './components/MTTCard/MeetTeam';
 
 function App() {
   return (
@@ -20,13 +21,15 @@ function App() {
             <Route index element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/courses' element={<Courses />} />
-            <Route path='/blogs' element={<Blogs />} />
+            <Route path='/blog' element={<Blogs />} />
             <Route path='/blogs/:id' element={<Blog />} />
-            <Route path='/testimonials' element={<Testimonial />} />
+            <Route path='/testimonial' element={<Testimonial />} />
           </Route>
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='*' element={'404'} />
+
+          <Route path='/meetUs' element={<Meet />} />
         </Routes>
       </Router>
     </div>
