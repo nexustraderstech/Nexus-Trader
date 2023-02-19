@@ -44,6 +44,7 @@ const Courses = () => {
                 online={course.online}
                 offline={course.offline} 
                 content={course.content}
+                path={course.path}
               />
             )
           })

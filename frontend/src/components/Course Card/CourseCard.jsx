@@ -1,18 +1,11 @@
 import React from "react";
 import "./courseCard.scss";
 
-
-const CoursesCard = ({video, duration, online, offline, content}) => {
+const CoursesCard = ({ video, duration, online, offline, content, path }) => {
   return (
     <div className="coursesCard_container">
       <div className="col_1">
-        <video
-          src={video}
-          controls={false}
-          autoPlay
-          loop
-          muted
-        ></video>
+        <video src={video} controls={false} autoPlay loop muted></video>
       </div>
 
       <div className="col_2">
@@ -24,12 +17,15 @@ const CoursesCard = ({video, duration, online, offline, content}) => {
 
         <div className="syllabus">
           <ul>
-            {
-              content.map((item, ) => (
-                <li>{item}</li>
-              ))
-            }
+            {content.map((item) => (
+              <li>{item}</li>
+            ))}
           </ul>
+        </div>
+        <div className="sub_btn">
+          <a href={path} target="_blank">
+            <button>Join Now</button>
+          </a>
         </div>
       </div>
     </div>
