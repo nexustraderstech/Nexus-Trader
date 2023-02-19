@@ -95,6 +95,7 @@
   }
   .nav.expand {
     height: 100vh;
+    z-index: 2;
   }
   .nav.expand .logo > img {
     width: 50px;
