@@ -79,7 +79,7 @@ const Home = () => {
 
       {/*courses*/}
 
-      {/* <div className='home_courses'>
+      <div className='home_courses'>
         <div className='col_1'>
           <h1>Courses</h1>
           <p>
@@ -94,7 +94,7 @@ const Home = () => {
         </div>
 
         <div className='col_2'></div>
-      </div> */}
+      </div>
 
       {/*open Demat account*/}
 
