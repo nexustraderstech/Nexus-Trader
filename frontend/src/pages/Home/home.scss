@@ -3,12 +3,12 @@ $h2_fs: 30px;
 $normal_fs: 17px;
 $medium_fs: 20px;
 
-$cinzel: 'Cinzel', serif;
-$Varela_round: 'Varela Round', sans-serif;
+$cinzel: "Cinzel", serif;
+$Varela_round: "Varela Round", sans-serif;
 
-$home_sample_img_1: '..//..//..//public//assets//images//home_sample_img_1.png';
-$home_sample_img_2: '..//..//..//public//assets//images//home_sample_img_2.png';
-$home_sample_img_3: '..//..//..//public//assets//images//sample_image_4.png';
+$home_sample_img_1: "..//..//..//public//assets//images//home_sample_img_1.png";
+$home_sample_img_2: "..//..//..//public//assets//images//home_sample_img_2.png";
+$home_sample_img_3: "..//..//..//public//assets//images//sample_image_4.png";
 
 .container_home {
   color: white;
@@ -110,7 +110,7 @@ $home_sample_img_3: '..//..//..//public//assets//images//sample_image_4.png';
     padding: 50px;
 
     .col_1 {
-      width: 50%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -128,26 +128,10 @@ $home_sample_img_3: '..//..//..//public//assets//images//sample_image_4.png';
     }
 
     .col_2 {
-      width: 50%;
+      width: 100%;
       display: flex;
+      overflow-x: hidden;
       justify-content: center;
-      background-color: white;
-      .mySwiper {
-        border: 1px solid white;
-        width: 10%;
-
-        .card {
-          border: 1px solid red;
-          width: auto;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-
-          img {
-            width: 40%;
-          }
-        }
-      }
     }
   }
 
@@ -383,11 +367,11 @@ $home_sample_img_3: '..//..//..//public//assets//images//sample_image_4.png';
     }
     .stats {
       .bottom {
-        div[class*='col'] h1 {
+        div[class*="col"] h1 {
           font-size: 40px;
         }
 
-        div[class*='col'] p {
+        div[class*="col"] p {
           font-size: 30px;
         }
       }
@@ -473,11 +457,11 @@ $home_sample_img_3: '..//..//..//public//assets//images//sample_image_4.png';
         font-size: 22px;
       }
       .bottom {
-        div[class*='col'] h1 {
+        div[class*="col"] h1 {
           font-size: 30px;
         }
 
-        div[class*='col'] p {
+        div[class*="col"] p {
           font-size: 20px;
         }
       }
@@ -569,11 +553,11 @@ $home_sample_img_3: '..//..//..//public//assets//images//sample_image_4.png';
       }
       .bottom {
         flex-wrap: wrap;
-        div[class*='col'] h1 {
+        div[class*="col"] h1 {
           font-size: 25px;
         }
 
-        div[class*='col'] p {
+        div[class*="col"] p {
           font-size: 20px;
         }
       }
