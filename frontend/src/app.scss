@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Text+Me+One&family=Varela+Round&display=swap");
+
+$cinzel: "Cinzel", serif;
+$Varela_round: "Varela Round", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  font-family: $Varela_round;
+  box-sizing: border-box;
+  // font-family: $Varela_round;
+  // color:white;
+
+  // transition
+  // -webkit-transition: all 1s ease-out;
+  // -moz-transition: all 1s ease;
+  // -o-transition: all 1s ease;
+  // transition: all 1s ease;
+}
+
+body {
+  background-color: #141416;
+  color:white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: $cinzel;
+}
+
+.app_container {
+  width: 100%;
+}
+
+// ---------- ---------- ----------
+
+// Extra large screens, TV          –> 1201px, and more
+$extra_large: 1201px;
+// Desktops, large screens          –> 1025px — 1200px
+$large: 1200px;
+// Small screens, laptops           –> 769px — 1024px
+$small: 1024px;
+// iPads, Tablets                   –> 481px — 768px
+$tablets: 768px;
+// Mobile devices                   –> 320px — 480px
+$mobile: 480px;
+
+// ---------- ---------- ----------
+
+// // Extra large screens, TV          –> 1201px, and more
+// @media (max-width: $extra_large) {
+//   * {
+//     -webkit-transition: all 1s ease-out;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     transition: all 1s ease;
+//   }
+// }
+
+// // Desktops, large screens          –> 1025px — 1200px
+// @media (max-width: $large) {
+//   * {
+//     -webkit-transition: all 1s ease-out;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     transition: all 1s ease;
+//   }
+// }
+
+// // Small screens, laptops           –> 769px — 1024px
+// @media (max-width: $small) {
+//   * {
+//     -webkit-transition: all 1s ease-out;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     transition: all 1s ease;
+//   }
+// }
+
+// // iPads, Tablets                   –> 481px — 768px
+// @media (max-width: $tablets) {
+//   * {
+//     -webkit-transition: all 1s ease-out;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     transition: all 1s ease;
+//   }
+// }
+
+// // Mobile devices                   –> 320px — 480px
+// @media (max-width: $mobile) {
+//   * {
+//     -webkit-transition: all 1s ease-out;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     transition: all 1s ease;
+//   }
+// }

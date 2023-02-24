@@ -1,3 +1,165 @@
-.navbar_container{
-    
+// Desktops, large screens          –> 1025px — 1200px
+$large: 1200px;
+// Small screens, laptops           –> 769px — 1024px
+$small: 1024px;
+// iPads, Tablets                   –> 481px — 768px
+$tablets: 768px;
+// Mobile devices                   –> 320px — 480px
+$mobile: 480px;
+
+// ---------- ---------- ----------
+
+$Cinzel: "Cinzel", serif;
+$VarelaRound: "Varela Round", sans-serif;
+$NexusGold: #daa520;
+$FontSizeNormalText: 1rem;
+
+// ---------- ---------- ----------
+
+.nav {
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: auto;
+  // border: 1px solid red; // do not delete
+
+  .left {
+    margin: 10px 20px;
+    // border: 1px solid red; // do not delete
+
+    img {
+      width: 70px;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    width: 100%;
+    // border: 1px solid red; // do not delete
+
+    font-size: $FontSizeNormalText;
+
+    .menu {
+      cursor: pointer;
+    }
+
+    .active {
+      color: $NexusGold;
+    }
+
+    button {
+      min-width: 115px;
+      width: auto;
+      padding: 10px 20px;
+      color: $NexusGold;
+      font-size: $FontSizeNormalText;
+      border: 2px solid $NexusGold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .btn_toggle {
+    display: none;
+  }
 }
+
+.nav_expand {
+  color: white;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: 1px solid red; // do not delete
+  position: relative;
+
+  .left {
+    position: absolute;
+    top: 0.6rem;
+    margin: 10px 20px;
+    // border: 1px solid red; // do not delete
+
+    img {
+      width: 70px;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+    padding: 10px;
+    margin-top: 1rem;
+    width: 100%;
+    // border: 1px solid red; // do not delete
+
+    font-size: $FontSizeNormalText;
+
+    .menu {
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+
+    .active {
+      color: $NexusGold;
+    }
+
+    button {
+      min-width: 115px;
+      width: auto;
+      padding: 10px 20px;
+      color: $NexusGold;
+      font-size: $FontSizeNormalText;
+      border: 2px solid $NexusGold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .btn_toggle {
+    position: absolute;
+    top: 3rem;
+    right: 0.5rem;
+    margin-right: 3rem;
+    display: block;
+  }
+}
+
+// Small screens, laptops           –> 769px — 1024px
+@media (max-width: $small) {
+  .nav {
+    position: relative;
+
+    .right {
+      margin-top: 5rem;
+      flex-direction: column;
+      display: none;
+
+      .menu {
+        margin-top: 2rem;
+      }
+    }
+
+    .btn_toggle {
+      display: block;
+      margin-right: 3rem;
+    }
+  }
+}
+
+// iPads, Tablets                   –> 481px — 768px
+
+// Mobile devices                   –> 320px — 480px
+
+// ---------- ---------- ----------
