@@ -1,0 +1,78 @@
+// Desktops, large screens          –> 1025px — 1200px
+$large: 1200px;
+// Small screens, laptops           –> 769px — 1024px
+$small: 1024px;
+// iPads, Tablets                   –> 481px — 768px
+$tablets: 768px;
+// Mobile devices                   –> 320px — 480px
+$mobile: 480px;
+
+// ---------- ---------- ----------
+
+$cinzel: 'Cinzel', serif;
+$varela_round: 'Varela Round', sans-serif;
+
+.card_container {
+  border-radius: 10px;
+  padding: 1rem;
+  // width: 100%;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: baseline;
+  background-color: #1b1c1e;
+  gap: 10px;
+
+  .card_img {
+    width: 50px;
+  }
+
+  .card_title {
+    color: #daa520;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: $cinzel;
+  }
+
+  .card_content {
+    // width: 80%;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: $varela_round;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .card_container {
+    width: auto;
+    padding: 1rem;
+    .card_img {
+      width: 30px;
+    }
+    .card_title {
+      font-size: 14px;
+    }
+    .card_content {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .card_container {
+    width: 100%;
+    padding: 1rem;
+    .card_img {
+      width: 30px;
+    }
+    .card_title {
+      font-size: 14px;
+    }
+    .card_content {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+}
