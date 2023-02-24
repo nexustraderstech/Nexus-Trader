@@ -4,7 +4,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <div className="footer_container">
-      <div>Footer</div>
+      © 2021 Nexus Traders. All rights Reserved | Developed by Shaurya & Sameer
     </div>
   );
 };
