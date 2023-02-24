@@ -1,3 +1,189 @@
-.aboutUs_container{
-    
+// Desktops, large screens          –> 1025px — 1200px
+$large: 1200px;
+// Small screens, laptops           –> 769px — 1024px
+$small: 1024px;
+// iPads, Tablets                   –> 481px — 768px
+$tablets: 768px;
+// Mobile devices                   –> 320px — 480px
+$mobile: 480px;
+
+// ---------- ---------- ----------
+
+$Cinzel: "Cinzel", serif;
+$VarelaRound: "Varela Round", sans-serif;
+$NexusGold: #daa520;
+$FontSizeNormalText: 1rem;
+
+// ---------- ---------- ----------
+
+.about_container {
+  margin: 0;
+  padding: 0;
+//   color: white;
+  width: 100%;
+
+  .header {
+    // border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 60px;
+    }
+
+    .small_text {
+      font-size: 50px;
+      font-family: $Cinzel;
+    }
+
+    .subTitle {
+      font-size: 30px;
+      letter-spacing: 5px;
+    }
+
+    .text {
+      font-size: 20px;
+      text-align: center;
+      margin: 10px 0;
+      line-height: 25px;
+    }
+  }
+
+  .center_img {
+    // border: 1px solid white;
+    padding: 50px;
+    img {
+      width: 100%;
+    }
+  }
+
+  // used everywhere !!
+  h2 {
+    font-size: 50px;
+    margin: 10px 0 50px;
+    border-bottom: 5px solid white;
+
+    .small_text {
+      font-size: 40px;
+      font-family: $Cinzel;
+    }
+  }
+
+  .meet_the_team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .person_card {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      // padding: 20px 50px 0 20px;
+
+      .img_div {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        h3 {
+          font-size: 50px;
+          color: #daa520;
+          letter-spacing: 10px;
+
+          .small_text {
+            font-size: 30px;
+            letter-spacing: 10px;
+            color: #daa520;
+          }
+        }
+
+        .subTitle {
+          font-size: 20px;
+          letter-spacing: 10px;
+        }
+
+        .text {
+          line-height: 20px;
+          letter-spacing: 2px;
+          width: 80%;
+        }
+
+        .icon {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .our_story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 0;
+
+    img {
+      width: 40%;
+    }
+
+    .content {
+      margin: 50px 0;
+      width: 70%;
+
+      p {
+        line-height: 30px;
+        font-size: 20px;
+      }
+    }
+  }
 }
+
+// ---------- ---------- ----------
+
+// iPads, Tablets                   –> 481px — 768px
+@media (max-width: 768px) {
+  .about_container {
+    .header {
+      h1 {
+        font-size: 40px;
+      }
+      .small_text {
+        font-size: 30px;
+      }
+      .subTitle {
+        font-size: 16px;
+      }
+      .text {
+        font-size: 16px;
+        padding: 1rem;
+      }
+      .meet_the_team {
+      }
+    }
+    h2 {
+      font-size: 40px;
+
+      .small_text {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
