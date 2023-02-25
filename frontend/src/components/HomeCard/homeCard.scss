@@ -9,20 +9,23 @@ $mobile: 480px;
 
 // ---------- ---------- ----------
 
-$cinzel: 'Cinzel', serif;
-$varela_round: 'Varela Round', sans-serif;
+$Cinzel: "Cinzel", serif;
+$VarelaRound: "Varela Round", sans-serif;
+
+// ---------- ---------- ----------
 
 .card_container {
   border-radius: 10px;
-  padding: 1rem;
+  padding: 2rem;
   // width: 100%;
   width: 320px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: baseline;
   background-color: #1b1c1e;
-  gap: 10px;
+  gap: 1rem;
 
   .card_img {
     width: 50px;
@@ -31,48 +34,74 @@ $varela_round: 'Varela Round', sans-serif;
   .card_title {
     color: #daa520;
     font-weight: bold;
-    font-size: 20px;
-    font-family: $cinzel;
+    font-size: 1.5rem;
+    font-family: $Cinzel;
   }
 
   .card_content {
-    // width: 80%;
-    padding: 1rem;
-    font-size: 15px;
-    font-family: $varela_round;
+    font-size: 1.1rem;
+    font-family: $VarelaRound;
+    line-height: 1.5rem;
   }
 }
 
+// ---------- ---------- ----------
 
-@media (max-width: 900px) {
+// Small screens, laptops           –> 769px — 1024px
+
+@media (max-width: $small) {
   .card_container {
-    width: auto;
-    padding: 1rem;
+    padding: 2rem;
+    // width: auto !important;
+    width: 25rem;
+    gap: 1rem;
+
     .card_img {
-      width: 30px;
+      width: 4rem;
     }
+
     .card_title {
-      font-size: 14px;
+      font-size: 2rem;
     }
+
     .card_content {
-      width: 100%;
-      padding: 0.5rem;
+      font-size: 1.3rem;
+      line-height: 2rem;
     }
   }
 }
-@media (max-width: 480px) {
+
+// ---------- ---------- ----------
+
+// iPads, Tablets                   –> 481px — 768px
+
+@media (max-width: $tablets) {
+  .card_container {
+    padding: 2rem;
+    width: 15rem;
+    gap: 1rem;
+
+    .card_img {
+      width: 3rem;
+    }
+
+    .card_title {
+      font-size: 1.5rem;
+    }
+
+    .card_content {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+// ---------- ---------- ----------
+
+// Mobile devices                   –> 320px — 480px
+
+@media (max-width: $mobile) {
   .card_container {
     width: 100%;
-    padding: 1rem;
-    .card_img {
-      width: 30px;
-    }
-    .card_title {
-      font-size: 14px;
-    }
-    .card_content {
-      width: 100%;
-      padding: 0.5rem;
-    }
   }
 }
