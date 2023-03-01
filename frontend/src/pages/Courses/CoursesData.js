@@ -17,7 +17,7 @@ export const CoursesData = [
       "Recordings of the sessions",
       "Mentor's trade breakdown videos",
     ],
-    path: "https://forms.gle/iVdTfka6LgGvgj8R9",
+    path: "/payment",
   },
   {
     id: 2,
@@ -33,6 +33,6 @@ export const CoursesData = [
       "Scalping strategy",
       "Commodity market ( includes doubt session)",
     ],
-    path: "https://www.google.com",
+    path: "/payment",
   },
 ];

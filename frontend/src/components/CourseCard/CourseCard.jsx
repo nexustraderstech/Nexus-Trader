@@ -1,5 +1,6 @@
 import React from "react";
 import "./courseCard.scss";
+import { Link } from "react-router-dom";
 
 const CoursesCard = ({ video, duration, online, offline, content, path }) => {
   return (
@@ -23,9 +24,9 @@ const CoursesCard = ({ video, duration, online, offline, content, path }) => {
           </ul>
         </div>
         <div className="sub_btn">
-          <a href={path} target="_blank" rel="noreferrer">
+          <Link to={path} >
             <button>Join Now</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

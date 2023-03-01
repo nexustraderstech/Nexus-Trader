@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import HomeCard from "../../components/HomeCard/HomeCard";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Demat from "../../components/Demat/Demat";
+import CourseSlider from "../../components/SwiperJS_Slider/HomeCourseSlider/HomeCourseSlider";
+import TestimonialsSlider from "../../components/SwiperJS_Slider/HomeTestimonialsSlider/HomeTestiSlider";
 
 const logo_with_signature = "./assets/images/logo_with_signature.png";
 const sujoy_hitesh_2 = "./assets/images/sujoy_hitesh_2.jpg";
@@ -39,41 +41,6 @@ const Home = () => {
         "Regular market updates and analysis for the best stock picks, support for 6 months even after the course ends.",
     },
   ];
-
-  // const swiper_card_data = [
-  //   {
-  //     id: 1,
-  //     data: "courses",
-  //     card_data: [
-  //       {
-  //         id: 1,
-  //         img: "assets/images/platinum_course.png",
-  //         title: "Platinum Course",
-  //       },
-  //       {
-  //         id: 2,
-  //         img: "./assets/images/advanced_course.png",
-  //         title: "Advanced Course",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     data: "blogs",
-  //     card_data: [
-  //       {
-  //         id: 1,
-  //         img: "assets/images/platinum_course.png",
-  //         title: "Platinum Course",
-  //       },
-  //       {
-  //         id: 2,
-  //         img: "./assets/images/advanced_course.png",
-  //         title: "Advanced Course",
-  //       },
-  //     ],
-  //   },
-  // ];
 
   const stats_data = [
     // {
@@ -155,7 +122,9 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="col_2"></div>
+        <div className="col_2">
+          <CourseSlider />
+        </div>
       </div>
 
       {/*open Demat account*/}
@@ -166,7 +135,9 @@ const Home = () => {
 
       <div className="home_testi">
         <h2>Testimonials</h2>
-        <div className="testi_slider"></div>
+        <div className="testi_slider">
+          <TestimonialsSlider />
+        </div>
       </div>
 
       {/*stats*/}
@@ -217,10 +188,10 @@ const Home = () => {
       </div>
 
       {/*Blogs*/}
-      <div className="home_blogs">
+      {/*<div className="home_blogs">
         <h2>BLogs</h2>
         <div className="blog_slider"></div>
-      </div>
+      </div>*/}
 
       {/*About Us*/}
       <div className="home_about">

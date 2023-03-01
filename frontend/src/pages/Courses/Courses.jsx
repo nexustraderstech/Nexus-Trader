@@ -31,6 +31,7 @@ const Courses = () => {
           return (
             <CoursesCard
               key={index}
+              id={course.id}
               video={course.video}
               duration={course.duration}
               online={course.online}
