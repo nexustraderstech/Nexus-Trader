@@ -28,15 +28,6 @@ const Navbar = () => {
           <NavLink to="/courses" className="menu">
             Courses
           </NavLink>
-          <NavLink to="/testimonials" className="menu">
-            Testimonials
-          </NavLink>
-          <NavLink to="/reviews" className="menu">
-            Reviews
-          </NavLink>
-          <NavLink to="/workshops" className="menu">
-            Workshops
-          </NavLink>
         <button className="menu">
           <b>Join Now</b>
         </button>

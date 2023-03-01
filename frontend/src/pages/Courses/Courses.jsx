@@ -1,6 +1,6 @@
 import React from "react";
 import "./courses.scss";
-import { CoursesData } from "./CoursesData";
+import { CoursesData } from "../../data/CoursesData";
 import CoursesCard from "../../components/CourseCard/CourseCard";
 import Demat from "../../components/Demat/Demat";
 

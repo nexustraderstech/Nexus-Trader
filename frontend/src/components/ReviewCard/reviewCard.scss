@@ -1,0 +1,60 @@
+// Small screens, laptops           –> 769px — 1024px
+$small: 1024px;
+// iPads, Tablets                   –> 481px — 768px
+$tablets: 768px;
+// Mobile devices                   –> 320px — 480px
+$mobile: 480px;
+
+// ---------- ---------- ----------
+
+.review_card_Container{
+    width: 50%; 
+    background-color: black;
+    border-radius: 10px;
+    padding: 2rem;
+    min-height: 300px;
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .icon{
+            font-size: 30px;
+        }
+        .person{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            .stars{
+                font-size: 20px;
+            }
+        }
+    }
+    .content{
+        margin-top: 1rem;
+    }
+}
+
+// Small screens, laptops           –> 769px — 1024px
+@media (max-width: $small) {
+    .review_card_Container{
+        width: 60%;
+    }
+}
+// iPads, Tablets                   –> 481px — 768px
+@media (max-width: $tablets) {
+    .review_card_Container{
+        width: 70%;
+    }
+}
+// Mobile devices                   –> 320px — 480px
+@media (max-width: $mobile) {
+    .review_card_Container{
+        width: 100%;
+    }
+}
+
+// ---------- ---------- ----------

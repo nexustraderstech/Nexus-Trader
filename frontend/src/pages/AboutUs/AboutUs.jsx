@@ -1,5 +1,5 @@
 import React from "react";
-import { TeamData } from "./TeamData";
+import { TeamData } from "../../data/TeamData";
 import "./aboutUs.scss";
 import MeetTeam from "./../../components/MTTCard/MeetTeam";
 

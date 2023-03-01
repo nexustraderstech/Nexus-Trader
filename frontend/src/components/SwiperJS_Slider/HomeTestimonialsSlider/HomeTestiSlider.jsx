@@ -12,7 +12,7 @@ import "./homeTestiSlider.scss";
 // import required modules
 import { EffectCoverflow, Autoplay, Pagination, Navigation } from "swiper";
 
-import { TestimonialData } from "../../../pages/Testimonials/TestimonialData";
+import { TestimonialData } from "../../../data/TestimonialData";
 
 export default function HomeTestiSlider() {
   return (

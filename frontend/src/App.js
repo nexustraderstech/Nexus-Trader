@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/AboutUs/AboutUs';
 import Courses from './pages/Courses/Courses';
 import Home from './pages/Home/Home';
-import Testimonial from './pages/Testimonials/Testi';
-import Workshops from './pages/Workshops/Workshops';
-import Reviews from './pages/Reviews/Reviews';
 import Layout from './Layout';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
@@ -26,9 +23,6 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/courses' element={<Courses />} />
             <Route path='/payment' element={<Payment />} />
-            <Route path='/testimonials' element={<Testimonial />} />
-            <Route path='/workshops' element={<Workshops />} />
-            <Route path='/reviews' element={<Reviews />} />
             <Route path='/puc' element={<PageUnderConstruction/>} />
             <Route path='*' element={<PageNotFound/>} />
           </Route>

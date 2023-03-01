@@ -146,7 +146,7 @@ $mobile: 480px;
     }
   }
 
-  .home_testi {
+  .home_common {
     // border: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -160,11 +160,9 @@ $mobile: 480px;
       font-size: $h2_fs;
     }
 
-    .testi_slider {
+    .slider {
       width: 100%;
       height: auto;
-      // height: 100px;
-      // background-color: white;
     }
   }
 

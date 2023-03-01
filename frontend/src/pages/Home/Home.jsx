@@ -6,6 +6,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Demat from "../../components/Demat/Demat";
 import CourseSlider from "../../components/SwiperJS_Slider/HomeCourseSlider/HomeCourseSlider";
 import TestimonialsSlider from "../../components/SwiperJS_Slider/HomeTestimonialsSlider/HomeTestiSlider";
+import ReviewSlider from "../../components/SwiperJS_Slider/HomeReviewSlider/HomeReviewSlider";
 
 const logo_with_signature = "./assets/images/logo_with_signature.png";
 const sujoy_hitesh_2 = "./assets/images/sujoy_hitesh_2.jpg";
@@ -64,8 +65,6 @@ const Home = () => {
       title: "Hours of Teaching",
     },
   ];
-
-  // const [scrollPosition, setScrollPosition] = useState(0);
 
   return (
     <div className="container_home">
@@ -133,9 +132,9 @@ const Home = () => {
 
       {/*testimonials*/}
 
-      <div className="home_testi">
+      <div className="home_common">
         <h2>Testimonials</h2>
-        <div className="testi_slider">
+        <div className="slider">
           <TestimonialsSlider />
         </div>
       </div>
@@ -155,6 +154,15 @@ const Home = () => {
               <p>{item.title}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Review */}
+
+      <div className="home_common">
+        <h2>Review</h2>
+        <div className="slider">
+          <ReviewSlider />
         </div>
       </div>
 
