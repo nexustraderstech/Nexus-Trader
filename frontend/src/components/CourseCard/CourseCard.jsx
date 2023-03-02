@@ -25,7 +25,7 @@ const CoursesCard = ({ video, duration, online, offline, content, path }) => {
         </div>
         <div className="sub_btn">
           <Link to={path} >
-            <button>Join Now</button>
+            <button>Enroll Now</button>
           </Link>
         </div>
       </div>

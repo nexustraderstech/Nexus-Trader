@@ -19,18 +19,20 @@ const Navbar = () => {
       </div>
 
       <div className="right">
-          <NavLink to="/" className="menu">
-            Home
-          </NavLink>
-          <NavLink to="/about" className="menu">
-            About Us
-          </NavLink>
-          <NavLink to="/courses" className="menu">
-            Courses
-          </NavLink>
-        <button className="menu">
-          <b>Join Now</b>
-        </button>
+        <NavLink to="/" className="menu">
+          Home
+        </NavLink>
+        <NavLink to="/about" className="menu">
+          About Us
+        </NavLink>
+        <NavLink to="/courses" className="menu">
+          Courses
+        </NavLink>
+        <NavLink to="/courses" className="menu">
+          <button className="menu">
+            <b>Join Now</b>
+          </button>
+        </NavLink>
       </div>
 
       <div className="btn_toggle" onClick={toggler}>

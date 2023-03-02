@@ -4,12 +4,8 @@ import About from './pages/AboutUs/AboutUs';
 import Courses from './pages/Courses/Courses';
 import Home from './pages/Home/Home';
 import Layout from './Layout';
-import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
-import Payment from './pages/Payment/Payment';
 
 import PageNotFound from './pages/404_PageNotFound/PageNotFound';
-import PageUnderConstruction from './pages/PageUnderConstruction/PageUnderConstruction';
 
 import './app.scss';
 
@@ -22,13 +18,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/courses' element={<Courses />} />
-            <Route path='/payment' element={<Payment />} />
-            <Route path='/puc' element={<PageUnderConstruction/>} />
             <Route path='*' element={<PageNotFound/>} />
           </Route>
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='*' element={<PageNotFound/>} />
         </Routes>
       </Router>
     </div>
