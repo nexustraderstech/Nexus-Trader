@@ -2,7 +2,7 @@ export const CoursesData = [
   {
     id: 1,
     title: "Platinum Courses",
-    video: "./assets/images/platinum_course_vid.mp4",
+    video: "./assets/videos/platinum_course_vid.mp4",
     duration: " 8 weeks ",
     online: " ₹. 9,599/- ",
     offline: " ₹. 17,000/- ",
@@ -22,7 +22,7 @@ export const CoursesData = [
   {
     id: 2,
     title: "Advanced Courses",
-    video: "./assets/images/advanced_course_vid.mp4",
+    video: "./assets/videos/advanced_course_vid.mp4",
     duration: " 2 weeks ",
     online: " ₹. 6,999/-",
     offline: " ₹. 12,000/-",

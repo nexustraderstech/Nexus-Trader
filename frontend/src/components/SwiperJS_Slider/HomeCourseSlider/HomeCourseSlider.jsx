@@ -14,8 +14,8 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 import { Link } from "react-router-dom";
 
-const platinum_course = "./assets/images/platinum_course_vid.mp4";
-const advanced_course = "./assets/images/advanced_course_vid.mp4";
+const platinum_course = "./assets/videos/platinum_course_vid.mp4";
+const advanced_course = "./assets/videos/advanced_course_vid.mp4";
 
 export default function App() {
   return (

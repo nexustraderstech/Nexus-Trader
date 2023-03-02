@@ -10,7 +10,7 @@ import ReviewSlider from "../../components/SwiperJS_Slider/HomeReviewSlider/Home
 
 const logo_with_signature = "./assets/images/logo_with_signature.png";
 const sujoy_hitesh_2 = "./assets/images/sujoy_hitesh_2.jpg";
-const smaple_vid = "./assets/images/sample_vid_2.mp4";
+const smaple_vid = "./assets/videos/sample_vid_2.mp4";
 
 const Home = () => {
   const card_data = [
