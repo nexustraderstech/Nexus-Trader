@@ -552,6 +552,8 @@ $mobile: 480px;
         }
 
         .col_2 {
+          padding: 1rem;
+          gap: 1rem;
           width: 100%;
           grid-template-columns: auto;
         }

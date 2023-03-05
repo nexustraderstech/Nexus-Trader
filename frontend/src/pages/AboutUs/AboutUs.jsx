@@ -26,11 +26,9 @@ const AboutUs = () => {
         </pre>*/}
 
         <p className="text">
-          We at Nexustraders provide you with the best stock market course{" "}
-          <br />
-          with all the elements required to become an elite trader and <br />
-          investor in the stock market in the most simplified way, personally{" "}
-          <br />
+          We at Nexustraders provide you with the best stock market course
+          with all the elements required to become an elite trader and
+          investor in the stock market in the most simplified way, personallynpm 
           back-tested by us.
         </p>
       </div>

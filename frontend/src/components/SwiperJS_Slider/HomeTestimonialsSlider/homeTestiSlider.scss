@@ -22,7 +22,7 @@ $mobile: 480px;
 
 // Small screens, laptops           –> 769px — 1024px
 
-@media(max-width: $small){
+@media (max-width: $small) {
   .testiSlider {
     .swiper {
       .swiper-slide {
@@ -35,7 +35,7 @@ $mobile: 480px;
 
 // iPads, Tablets                   –> 481px — 768px
 
-@media(max-width: $tablets){
+@media (max-width: $tablets) {
   .testiSlider {
     .swiper {
       .swiper-slide {
@@ -49,7 +49,7 @@ $mobile: 480px;
 
 // Mobile devices                   –> 320px — 480px
 
-@media(max-width: $mobile){
+@media (max-width: $mobile) {
   .testiSlider {
     .swiper {
       .swiper-slide {

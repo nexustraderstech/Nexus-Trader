@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "./homeTestiSlider.scss";
 
 // import required modules
-import { EffectCoverflow, Autoplay, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Autoplay, Pagination } from "swiper";
 
 import { TestimonialData } from "../../../data/TestimonialData";
 
@@ -37,8 +37,7 @@ export default function HomeTestiSlider() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
+        modules={[EffectCoverflow, Autoplay, Pagination]}
         className="mySwiper"
       >
       {
