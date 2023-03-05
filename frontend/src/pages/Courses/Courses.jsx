@@ -31,11 +31,12 @@ const Courses = () => {
           return (
             <CoursesCard
               key={index}
-              id={course.id}
               video={course.video}
               duration={course.duration}
-              online={course.online}
-              offline={course.offline}
+              old_online={course.old_online}
+              new_online={course.new_online}
+              old_offline={course.old_offline}
+              new_offline={course.new_offline}
               content={course.content}
               path={course.path}
             />

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Text+Me+One&family=Varela+Round&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap");
+
 $cinzel: "Cinzel", serif;
 $Varela_round: "Varela Round", sans-serif;
 
@@ -21,7 +23,7 @@ $Varela_round: "Varela Round", sans-serif;
 
 body {
   background-color: #141515;
-  color:white;
+  color: white;
 }
 
 a {
@@ -29,7 +31,12 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $cinzel;
 }
 
