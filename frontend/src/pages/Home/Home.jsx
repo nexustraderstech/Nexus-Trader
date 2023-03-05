@@ -6,7 +6,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Demat from "../../components/Demat/Demat";
 import CourseSlider from "../../components/SwiperJS_Slider/HomeCourseSlider/HomeCourseSlider";
 import TestimonialsSlider from "../../components/SwiperJS_Slider/HomeTestimonialsSlider/HomeTestiSlider";
-import ReviewSlider from "../../components/SwiperJS_Slider/HomeReviewSlider/HomeReviewSlider";
+// import ReviewSlider from "../../components/SwiperJS_Slider/HomeReviewSlider/HomeReviewSlider";
 
 const logo_with_signature = "./assets/images/logo_with_signature.png";
 const sujoy_hitesh_2 = "./assets/images/sujoy_hitesh_2.jpg";
@@ -159,12 +159,12 @@ const Home = () => {
 
       {/* Review */}
 
-      <div className="home_common">
+      {/*<div className="home_common">
         <h2>Review</h2>
         <div className="slider">
           <ReviewSlider />
         </div>
-      </div>
+          </div>*/}
 
       {/*Visions*/}
 

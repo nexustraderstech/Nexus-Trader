@@ -6,9 +6,6 @@ $normal_fs: 1rem;
 $Cinzel: "Cinzel", serif;
 $VarelaRound: "Varela Round", sans-serif;
 
-// $home_sample_img_1: "..//..//assets//images//home_sample_img_1.png";
-// $home_sample_img_2: "..//..//assets//images//home_sample_img_2.png";
-// $home_sample_img_3: "..//..//assets//images//sample_image_3.png";
 $home_sample_img_1: "..//..//..//public//assets//images//home_sample_img_1.png";
 $home_sample_img_2: "..//..//..//public//assets//images//home_sample_img_2.png";
 $home_sample_img_3: "..//..//..//public//assets//images//sample_image_3.png";
@@ -330,7 +327,9 @@ $mobile: 480px;
 // ---------- ---------- ----------
 
 // Small screens, laptops           –> 769px — 1024px
-
+// $small: 1024px;
+// $tablets: 768px;
+// @media screen and (max-width: $small) and (min-width: (parseInt($tablets)+1)) {
 @media (max-width: $small) {
   .container_home {
     .home_header {
