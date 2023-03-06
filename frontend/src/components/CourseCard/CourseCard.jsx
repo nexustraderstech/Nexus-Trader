@@ -1,6 +1,5 @@
 import React from "react";
 import "./courseCard.scss";
-import { Link } from "react-router-dom";
 
 const CoursesCard = (props) => {
   return (
@@ -25,9 +24,9 @@ const CoursesCard = (props) => {
             </ul>
           </div>
           <div className="sub_btn">
-            <Link to={props.path}>
+            <a href={props.path} target="_blank" rel="noreferrer">
               <button >Enroll Now</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

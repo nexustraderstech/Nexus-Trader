@@ -4,10 +4,10 @@ export const CoursesData = [
     // video: "./assets/videos/platinum_course_vid.mp4",
     video: "./assets/videos/platinum_course_vid_croped.mp4",
     duration: " 8 weeks ",
-    old_online: " ₹. 13,999/- ",
-    new_online: " ₹. 11,999/- ",
+    old_online: " ₹. 11,999/- ",
+    new_online: " ₹. 9,599/- ",
     old_offline: " ₹. 19,999/- ",
-    new_offline: " ₹. 17,000/- ",
+    new_offline: " ₹. 16,999/- ",
     content: [
       "Consists of Beginners, Intermediate and Advanced Course",
       "FREE demat account opening",
@@ -19,7 +19,7 @@ export const CoursesData = [
       "Recordings of the sessions",
       "Mentor's trade breakdown videos",
     ],
-    path: "/payment",
+    path: "https://forms.gle/nkoZeMa8u475buhz7",
   },
   {
     title: "Advanced Courses",
@@ -37,6 +37,6 @@ export const CoursesData = [
       "Scalping strategy",
       "Commodity market ( includes doubt session)",
     ],
-    path: "/payment",
+    path: "https://forms.gle/xEeTmRFmWzXDJM4PA",
   },
 ];
