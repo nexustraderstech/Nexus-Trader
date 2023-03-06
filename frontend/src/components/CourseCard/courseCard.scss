@@ -51,29 +51,26 @@ $NotoSerif: 'Noto Serif', serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 2rem;
+      gap: 1.5rem;
 
       .detail {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 2rem;
         *{
           font-family: $NotoSerif;
         }
         
         .old{
-          font-size: 16px;
+          font-size: 1.5rem;
           text-decoration: line-through;
         }
       }
   
       .syllabus {
-        // margin-top: 20px;
         margin-left: 15px;
-        line-height: 25px;
-        font-size: 15px;
+        font-size: 1.1rem;
   
         li{
-          line-height: 1.5rem;
+          line-height: 2rem;
         }
       }
   
@@ -92,16 +89,14 @@ $NotoSerif: 'Noto Serif', serif;
           font-size: 20px;
           line-height: 20px;
           border-radius: 5px;
+          color: #daa520;
           border: 2px solid #daa520;
           font-weight: bold;
-        }
-        .btn_1{
-          color: #daa520;
-        }
-        
-        .btn_2{
-          color: black;
-          background-color: #daa520;
+
+          &:hover{
+            color: black;
+            background-color: #daa520;
+          }
         }
       }
     }
@@ -215,13 +210,20 @@ $NotoSerif: 'Noto Serif', serif;
   .coursesCard_container {
     gap: 20px;
     .col_2 {
+      padding-left: 0;
+      padding: 1rem;
       gap: 20px;
       .content{
+        margin-left: 0;
         .detail {
           text-align: center;
           margin-left: 0;
-          font-size: 18px;
-          line-height: 30px;
+          font-size: 1.2rem;
+          line-height: 2rem;
+
+          .old{
+            font-size: 1rem;
+          }
         }
   
         .syllabus {

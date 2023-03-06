@@ -19,8 +19,7 @@ export const CoursesData = [
       "Recordings of the sessions",
       "Mentor's trade breakdown videos",
     ],
-    path_1: "/payment",
-    path_2: "/payment",
+    path: "/payment",
   },
   {
     title: "Advanced Courses",
@@ -38,7 +37,6 @@ export const CoursesData = [
       "Scalping strategy",
       "Commodity market ( includes doubt session)",
     ],
-    path_1: "/payment",
-    path_2: "/payment",
+    path: "/payment",
   },
 ];

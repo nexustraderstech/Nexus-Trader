@@ -1,17 +1,17 @@
 import React from "react";
-import "./demat.scss";
+import "./preRegistration.scss";
 
 const Demat = () => {
   return (
     <div className="demat">
       <div className="content">
-        <h2>Open FREE Demat Account with Zerodha</h2>
+        <h2>Get +20% Discount on Pre-Registration for NEXT Batch !!</h2>
         <a
-          href="https://zerodha.com/?c=TZ4645&s=CONSOLE"
+          href="https://forms.gle/1PTVCiNhYnKmBC3Y9"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="button"> Open an Account</button>
+          <button className="button"> Get +20% Discount</button>
         </a>
         <div className="hr"></div>
       </div>

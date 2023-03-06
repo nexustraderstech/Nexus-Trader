@@ -25,13 +25,8 @@ const CoursesCard = (props) => {
             </ul>
           </div>
           <div className="sub_btn">
-            <Link to={props.path_1}>
-              <button className="btn_1">Enroll Now</button>
-            </Link>
-            <Link to={props.path_2}>
-              <button className="btn_2">
-                Get +20% discount on pre-registration of NEXT BATCH !!
-              </button>
+            <Link to={props.path}>
+              <button >Enroll Now</button>
             </Link>
           </div>
         </div>
