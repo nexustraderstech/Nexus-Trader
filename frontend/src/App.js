@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./pages/AboutUs/AboutUs";
 import Courses from "./pages/Courses/Courses";
 import Home from "./pages/Home/Home";
-import ContactUs from "./pages/ContactUs/ContactUs";
 import Layout from "./Layout";
 
 import PageNotFound from "./pages/404_PageNotFound/PageNotFound";
@@ -19,7 +18,6 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
-            {/*<Route path='/contact-us' element={<ContactUs />} />*/}
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>

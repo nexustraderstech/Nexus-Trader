@@ -2,7 +2,6 @@ import React from "react";
 import "./courses.scss";
 import { CoursesData } from "../../data/CoursesData";
 import CoursesCard from "../../components/CourseCard/CourseCard";
-import Demat from "../../components/Demat/Demat";
 import PreRegistration from "../../components/PreRegistration/PreRegistration";
 
 const sample_img = "./assets/images/sample_image_1.png";
