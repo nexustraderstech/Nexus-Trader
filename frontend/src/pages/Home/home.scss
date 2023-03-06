@@ -58,9 +58,10 @@ $mobile: 480px;
         font-size: $normal_fs;
       }
 
-      .button {
+      .btn {
         background-color: #daa520;
         border-radius: 10px;
+        border: 0;
         padding: 10px;
         font-weight: bold;
         font-size: $medium_fs;

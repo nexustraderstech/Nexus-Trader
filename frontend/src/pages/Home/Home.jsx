@@ -82,7 +82,7 @@ const Home = () => {
             backtested by us.
           </p>
           <Link to="/courses">
-            <button className="button">Enroll Now</button>
+            <button className="btn">Enroll Now</button>
           </Link>
         </div>
 

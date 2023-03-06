@@ -20,7 +20,7 @@ const Footer = () => {
             <img src={instagram} alt="instagram" />
           </a>
           <a
-            href=""
+            href="/"
             target="_blank"
             rel="noreferrer"
           >
