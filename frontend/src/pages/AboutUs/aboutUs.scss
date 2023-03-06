@@ -47,6 +47,7 @@ $FontSizeNormalText: 1rem;
     }
 
     .text {
+      width: 70%;
       font-size: 20px;
       text-align: center;
       margin: 10px 0;
@@ -158,7 +159,7 @@ $FontSizeNormalText: 1rem;
 // ---------- ---------- ----------
 
 // iPads, Tablets                   –> 481px — 768px
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
   .about_container {
     .header {
       h1 {
@@ -173,9 +174,11 @@ $FontSizeNormalText: 1rem;
       .text {
         font-size: 16px;
         padding: 1rem;
+        width: 100%;
       }
-      .meet_the_team {
-      }
+    }
+    .center_img{
+      padding: 1rem;
     }
     h2 {
       font-size: 40px;

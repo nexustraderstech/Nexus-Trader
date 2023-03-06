@@ -3,35 +3,26 @@ import "./meetTeam.scss";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const MeetTeam = ({
-  img,
-  Aorder,
-  cap1,
-  cap2,
-  smtxt1,
-  smtxt2,
-  subtitle,
-  text,
-}) => {
+const MeetTeam = (props) => {
   return (
     <div className="Mttcard">
-      <img src={img} style={{ order: Aorder }} alt="" />
+      <img src={props.img} style={{ order: props.Aorder }} alt="" />
 
       <div className="MttInfo">
         <h3>
-          {cap1}
-          <span className="small_text">{smtxt1} </span>
-          {cap2}
-          <span className="small_text">{smtxt2} </span>
+          {props.cap1}
+          <span className="small_text">{props.smtxt1} </span>
+          {props.cap2}
+          <span className="small_text">{props.smtxt2} </span>
         </h3>
-        <p className="subTitle">{subtitle}</p>
-        <p className="text">{text}</p>
+        <p className="subTitle">{props.subtitle}</p>
+        <p className="text">{props.text}</p>
         <div className="icon-grp">
           <span className="icon">
-            <InstagramIcon />
+            <a href={props.instagram} target="_blank" rel="noreferrer"> <InstagramIcon /> </a>
           </span>
           <span className="icon">
-            <LinkedInIcon />
+          <a href={props.linkedin} target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>
           </span>
         </div>
       </div>

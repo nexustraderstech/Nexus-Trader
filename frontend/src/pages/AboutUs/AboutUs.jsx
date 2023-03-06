@@ -17,14 +17,6 @@ const AboutUs = () => {
 
         <p className="subTitle">Turning Wealth Into Empire</p>
 
-        {/*<pre className="text">
-          We at Nexustraders provide you with 
-          the best stock market course with all the elements 
-          required to become an elite trader and investor in 
-          the stock market in the most simplified way, 
-          personally back-tested by us.
-        </pre>*/}
-
         <p className="text">
           We at Nexustraders provide you with the best stock market course
           with all the elements required to become an elite trader and
@@ -44,43 +36,6 @@ const AboutUs = () => {
           <span className="small_text">EAM</span>
         </h2>
 
-        {/*Hitesh Card*/}
-        {/* <div className="person_card">
-          <div className="img_div" id="hitesh_img">
-            <img src={hitesh} alt="" />
-          </div>
-
-          <div className="content" id="hitesh_content">
-            <h3>
-              H<span className="small_text">ITESH </span>G
-              <span className="small_text">ADLING </span>
-            </h3>
-            <p className="subTitle">Co-Founder</p>
-            <p className="text">
-              Hello! I'm Hitesh Gadling, the Co-Founder 
-              of 'Nexustraders'. To talk a bit more about 
-              myself - I am a last-year student pursuing a 
-              degree in sports management (which I have 
-              no idea about :p). I'm a professional Trader 
-              and Investor in the Stock Market with over 
-              two years of experience. I believe that everyone 
-              must have some knowledge about the financial 
-              markets and basic investing. The financial 
-              freedom that comes along with the stock market 
-              is what attracted me the most. I hope that my 
-              urge in this field will lead to a fruitful 
-              outcome for everyone!
-            </p>
-            <p>
-              <span className="icon">
-                <InstagramIcon />
-              </span>
-              <span className="icon">
-                <LinkedInIcon />
-              </span>
-            </p>
-          </div>
-        </div> */}
         {TeamData.map((item, index) => (
           <MeetTeam
             key={index}
@@ -92,46 +47,11 @@ const AboutUs = () => {
             smtxt2={item.smtxt2}
             subtitles={item.subtitle}
             text={item.text}
+            instagram={item.instagram}
+            linkedin={item.linkedin}
           />
         ))}
 
-        {/*Sujoy Card*/}
-        {/* <div className="person_card">
-          <div className="content" id="sujoy_content">
-            <h3>
-              S<span className="small_text">UJOY </span>B
-              <span className="small_text">HATTACHARYA </span>
-            </h3>
-            <p className="subTitle">Co-Founder</p>
-            <p className="text">
-              Hello! I'm Sujoy Bhattacharya, Co-Founder
-              and the official DJ of Nexustraders i.e. I will
-              keep the party going for you once you become a
-              part of our family. I am currently in my 3rd
-              year pursuing a computer science degree; which I
-              know has no relation to the stock market but ab
-              talent hai toh kya kare? Since a very young age,
-              I've been a keen learner in the stock market.
-              The knowledge that I gained has finally came to use
-              and now we are a community! I would just like to say
-              that enroll with us and I promise you won't regret it!
-            </p>
-              
-              <p>
-                <span className="icon">
-                  <InstagramIcon />
-                </span>
-                <span className="icon">
-                  <LinkedInIcon />
-                </span>
-              </p>
-          </div>
-
-          <div className="img_div" id="hitesh_img">
-            <img src={sujoy} alt="" />
-          </div>
-
-        </div> */}
       </div>
 
       <div className="our_story">
