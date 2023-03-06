@@ -5,7 +5,7 @@ const Demat = () => {
   return (
     <div className="demat">
       <div className="content">
-        <h2>Get +20% Discount on Pre-Registration for NEXT Batch !!</h2>
+        <h2>Get +20% Discount on Pre-Registration of Platinum Course for NEXT Batch !!</h2>
         <a
           href="https://forms.gle/1PTVCiNhYnKmBC3Y9"
           target="_blank"
