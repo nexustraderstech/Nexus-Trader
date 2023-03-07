@@ -80,8 +80,7 @@ const AboutUs = () => {
             constant experience and digging knowledge from the market, we
             started to figure it out and do well for ourselves in intraday
             trading and swing trades. Hitesh had an idea that we should start
-            teaching this to others as well. We told this idea to Deepesh as he
-            was learning about long-term investment. So boom! That's it, we had
+            teaching this to others as well. So boom! That's it, we had
             a team now. So, one night (which was actually 5 nights) Sujoy
             thought about a name and came up with 'Nexustraders'. Nexus means a
             group or community and we quickly designed the logo that we agreed

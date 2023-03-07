@@ -11,7 +11,7 @@ const Demat = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="button"> Get +20% Discount</button>
+          <button className="button"> Get 20% Discount</button>
         </a>
         <div className="hr"></div>
       </div>
