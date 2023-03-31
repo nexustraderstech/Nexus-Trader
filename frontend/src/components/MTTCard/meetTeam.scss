@@ -1,144 +1,146 @@
+// Desktops, large screens          –> 1025px — 1200px
+$large: 1200px;
+// Small screens, laptops           –> 769px — 1024px
+$small: 1024px;
+// iPads, Tablets                   –> 481px — 768px
+$tablets: 768px;
+// Mobile devices                   –> 320px — 480px
+$mobile: 480px;
+
+// ---------- ---------- ----------
+
+$Cinzel: "Cinzel", serif;
+$VarelaRound: "Varela Round", sans-serif;
+$NexusGold: #daa520;
+$FontSizeNormalText: 1rem;
+
+// ---------- ---------- ----------
+
 .Mttcard {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  width: auto;
-  height: auto;
+  // width: auto;
+  // height: auto;
   margin: 0;
-}
-.order1 {
-  order: 1;
-}
-.order2 {
-  order: 2;
-}
-
-.Mttcard img {
-  width: 50%;
-  order: 1;
-}
-
-.MttInfo {
-  width: 50%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0 3rem;
-  order: 1;
-}
-
-.MttInfo h3 {
-  font-size: 50px;
-  color: #daa520;
-  letter-spacing: 10px;
-}
-
-.MttInfo h3 .small_text {
-  font-size: 30px;
-  letter-spacing: 10px;
-  color: #daa520;
-}
-
-.MttInfo .subTitle {
-  font-size: 20px;
-  letter-spacing: 10px;
-}
-
-.MttInfo .text {
-  line-height: 20px;
-  letter-spacing: 2px;
-  // width: 80%;
-}
-.icon-grp {
-  margin-bottom: 1rem;
-}
-
-.MttInfo .icon {
-  margin: 0 10px;
-}
-
-@media (max-width: 1400px) {
-  .Mttcard {
-    justify-content: start;
+  
+  .MttImg {
+    width: 50%;
+    // height: 100%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+    }
   }
-  .Mttcard img {
-    width: 600px;
-    margin-top: 1rem;
-  }
-
-  .MttInfo h3 {
-    font-size: 30px;
-    color: #daa520;
-    letter-spacing: 10px;
-    text-align: center;
-  }
-
-  .MttInfo h3 .small_text {
-    font-size: 20px;
-    letter-spacing: 10px;
-    color: #daa520;
-  }
-}
-
-@media (max-width: 1000px) {
-  .Mttcard {
+  
+  .MttInfo {
+    // border: 1px solid red;
+    width: 50%;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // width: 90%;
-  }
+    gap: 1rem;
+    padding: 0 3rem;
 
-  .Mttcard img {
-    width: 400px;
-    order: 1;
-  }
-  .MttInfo {
-    width: 90%;
-    order: 2;
-  }
-  .MttInfo h3 {
-    font-size: 30px;
-    color: #daa520;
-    letter-spacing: 10px;
-    text-align: center;
-    margin-top: 1rem;
-  }
-
-  .MttInfo h3 .small_text {
-    font-size: 20px;
-    letter-spacing: 10px;
-    color: #daa520;
+    h3 {
+      font-size: 50px;
+      color: #daa520;
+      letter-spacing: 10px;
+      text-align: center;
+      
+      .small_text {
+        font-size: 35px;
+        letter-spacing: 10px;
+      }
+    }
+    .subTitle {
+      font-size: 1.5rem;
+      letter-spacing: 10px;
+    }
+    .text {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      // letter-spacing: 2px;
+      text-align: justify;
+      // width: 80%;
+    }
+    .icon_grp {
+      margin-bottom: 1rem;
+      
+      a {
+        margin: 0 10px;
+        img{
+          width: 2rem;;
+        }
+      }
+    }
   }
 }
 
-@media (max-width: 800px) {
-  .Mttcard img {
-    width: 300px;
-    order: 1;
-  }
+// ---------- ---------- ----------
 
-  .MttInfo {
-    order: 2;
-    width: 100%;
-    overflow: auto;
-  }
+// Desktops, large screens          –> 1025px — 1200px
+@media (max-width: $large){
+  .Mttcard{
+    .MttInfo{
+      padding: 0 1rem;
 
-  .MttInfo h3 {
-    font-size: 30px;
-    color: #daa520;
-    letter-spacing: 10px;
-    text-align: center;
-    margin-top: 1rem;
-  }
-
-  .MttInfo h3 .small_text {
-    font-size: 20px;
-    letter-spacing: 10px;
-    color: #daa520;
+      h3{
+        font-size: 40px;
+        .small_text{
+          font-size: 30px;
+        }
+      }
+      .text{
+        font-size: 1rem;
+      }
+    }
   }
 }
+
+// ---------- ---------- ----------
+
+// Small screens, laptops           –> 769px — 1024px
+
+
+// ---------- ---------- ----------
+
+// iPads, Tablets                   –> 481px — 768px
+
+@media (max-width: $tablets){
+  .Mttcard{
+    flex-direction: column;
+    margin-top: 1rem;
+    .MttImg{
+      order: 1 !important;
+    }
+    .MttInfo{
+      padding: 0 1rem;
+      width: 100%;
+      order: 2 !important;
+
+      h3{
+        font-size: 40px;
+        .small_text{
+          font-size: 30px;
+        }
+      }
+      .text{
+        width: 90%;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// ---------- ---------- ----------
+
+// Mobile devices                   –> 320px — 480px
+
+
+// ---------- ---------- ----------

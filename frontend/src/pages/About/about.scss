@@ -1,3 +1,21 @@
+// Desktops, large screens          –> 1025px — 1200px
+$large: 1200px;
+// Small screens, laptops           –> 769px — 1024px
+$small: 1024px;
+// iPads, Tablets                   –> 481px — 768px
+$tablets: 768px;
+// Mobile devices                   –> 320px — 480px
+$mobile: 480px;
+
+// ---------- ---------- ----------
+
+$Cinzel: "Cinzel", serif;
+$VarelaRound: "Varela Round", sans-serif;
+$NexusGold: #daa520;
+$FontSizeNormalText: 1rem;
+
+// ---------- ---------- ----------
+
 .about_container {
   margin: 0;
   padding: 0;
@@ -11,15 +29,12 @@
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+    text-align: center;
 
     h1 {
       margin: 0;
       padding: 0;
       font-size: 60px;
-    }
-
-    .small_text {
-      font-size: 50px;
     }
 
     .subTitle {
@@ -29,9 +44,10 @@
 
     .text {
       font-size: 20px;
-      text-align: center;
       margin: 10px 0;
       line-height: 25px;
+      width: 80%;
+      max-width: 1000px;
     }
   }
 
@@ -48,10 +64,6 @@
     font-size: 50px;
     margin: 10px 0 50px;
     border-bottom: 5px solid white;
-
-    .small_text {
-      font-size: 40px;
-    }
   }
 
   .meet_the_team {
@@ -59,57 +71,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    .person_card {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      // padding: 20px 50px 0 20px;
-
-      .img_div {
-        width: 50%;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      .content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-
-        h3 {
-          font-size: 50px;
-          color: #daa520;
-          letter-spacing: 10px;
-
-          .small_text {
-            font-size: 30px;
-            letter-spacing: 10px;
-            color: #daa520;
-          }
-        }
-
-        .subTitle {
-          font-size: 20px;
-          letter-spacing: 10px;
-        }
-
-        .text {
-          line-height: 20px;
-          letter-spacing: 2px;
-          width: 80%;
-        }
-
-        .icon {
-          margin: 0 10px;
-        }
-      }
-    }
   }
 
   .our_story {
@@ -125,9 +86,10 @@
 
     .content {
       margin: 50px 0;
-      width: 70%;
+      width: 80%;
 
       p {
+        text-align: justify;
         line-height: 30px;
         font-size: 20px;
       }
@@ -135,26 +97,37 @@
   }
 }
 
-@media (max-width: 768px) {
+// ---------- ---------- ----------
+
+// Desktops, large screens          –> 1025px — 1200px
+
+// ---------- ---------- ----------
+
+// Small screens, laptops           –> 769px — 1024px
+
+// ---------- ---------- ----------
+
+// iPads, Tablets                   –> 481px — 768px
+
+@media (max-width: $tablets) {
   .about_container {
     .header {
-      h1 {
-        font-size: 40px;
-      }
-      .small_text {
-        font-size: 30px;
-      }
-      .subTitle {
-        font-size: 16px;
-      }
+      // h1 {
+        // font-size: 40px;
+      // }
+      // .small_text {
+        // font-size: 30px;
+      // }
+      // .subTitle {
+        // font-size: 16px;
+      // }
       .text {
         font-size: 16px;
         padding: 1rem;
       }
-      .meet_the_team {
-      }
     }
     h2 {
+      margin: 10px 0 20px;
       font-size: 40px;
 
       .small_text {
@@ -163,3 +136,11 @@
     }
   }
 }
+
+// ---------- ---------- ----------
+
+// Mobile devices                   –> 320px — 480px
+
+// ---------- ---------- ----------
+
+

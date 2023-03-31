@@ -35,7 +35,8 @@ $Varela_round: "Varela Round", sans-serif;
 
     .subDiv {
       width: 60%;
-      background-color: #0e0e0f;
+      //   background-color: #0e0e0f;
+      background-color: black;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -43,7 +44,7 @@ $Varela_round: "Varela Round", sans-serif;
       gap: 10px;
       padding: 100px;
 
-      transform: translate(20%,-50%);
+      transform: translate(20%, -50%);
 
       .content {
         h1 {
@@ -62,50 +63,12 @@ $Varela_round: "Varela Round", sans-serif;
     }
   }
 
-  .demat {
-    width: 100%;
-    background-color: #daa520;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-
-    .content {
-      width: 95%;
-      background-color: #141416;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-
-      h1{
-        text-align: center;
-        font-size: 40px;
-      }
-
-      .button {
-        margin: 30px 0 10px 0;
-        background-color: #daa520;
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: $Varela_round;
-      }
-
-      .hr {
-        width: 20px;
-        border: 1px solid #636363;
-      }
-    }
-  }
-
   .courses {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 5rem;
     gap: 20px;
   }
 }
@@ -125,7 +88,7 @@ $Varela_round: "Varela Round", sans-serif;
       }
     }
 
-    .courses{
+    .courses {
       padding: 30px;
     }
   }
@@ -141,11 +104,11 @@ $Varela_round: "Varela Round", sans-serif;
         width: 80%;
         gap: 10px;
         padding: 100px;
-        transform: translateY(-50%);
+        transform: translateY(-30%);
       }
     }
 
-    .courses{
+    .courses {
       flex-direction: row;
       align-items: baseline;
       // padding: 30px;
@@ -198,8 +161,8 @@ $Varela_round: "Varela Round", sans-serif;
 
     .courses {
       flex-direction: column;
-      padding: 50px;
-      gap: 30px;
+      padding: 3rem;
+      gap: 5rem;
     }
   }
 }

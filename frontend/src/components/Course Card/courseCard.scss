@@ -13,6 +13,7 @@ $mobile: 480px;
 
 $cinzel: "Cinzel", serif;
 $Varela_round: "Varela Round", sans-serif;
+$NotoSerif: "Noto Serif", serif;
 
 // ---------- ---------- ----------
 
@@ -21,58 +22,86 @@ $Varela_round: "Varela Round", sans-serif;
 .coursesCard_container {
   width: 100%;
   display: flex;
-  background-color: #0e0e0f;
-  border-radius: 50px;
+  background-color: black;
+  border-radius: 20px;
   padding: 20px;
+
+  // -webkit-box-shadow: 0px 0px 32px 8px rgba(218, 165, 32, 1);
+  // -moz-box-shadow: 0px 0px 32px 8px rgba(218, 165, 32, 1);
+  // box-shadow: 0px 0px 32px 8px rgba(218, 165, 32, 1);
 
   .col_1 {
     width: 100%;
+    width: auto;
     display: flex;
+    // border: 1px solid red;
 
     video {
+      // border: 1px solid red;
       width: 100%;
-      border-radius: 50px 0 0 50px;
+      border-radius: 20px 0 0 20px;
     }
   }
+
   .col_2 {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
     // border: 1px solid red;
 
-    .detail {
-      margin-left: 50px;
-      font-size: 20px;
-      line-height: 30px;
-    }
-
-    .syllabus {
-      // margin-top: 20px;
-      margin-left: 65px;
-      line-height: 25px;
-      font-size: 15px;
-    }
-
-    .sub_btn{
-      width: 100%;
-      height: 100%;
-      // padding-top: 10px;
-      margin-left: 50px;
+    .content {
       display: flex;
-      align-items: end;
-      // border: 1px solid white;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
 
+      .detail {
+        font-size: 2rem;
+        * {
+          font-family: $NotoSerif;
+        }
 
-      button{
-        cursor: pointer;
-        padding: 10px 20px;
-        font-size: 20px;
-        line-height: 20px;
-        border-radius: 5px;
-        color: #daa520;
-        border: 2px solid #daa520;
+        .old {
+          font-size: 1.5rem;
+          text-decoration: line-through;
+        }
+      }
+
+      .syllabus {
+        margin-left: 15px;
+        font-size: 1.1rem;
+
+        li {
+          line-height: 2rem;
+        }
+      }
+
+      .sub_btn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        // border: 1px solid white;
+
+        button {
+          cursor: pointer;
+          padding: 10px 20px;
+          font-size: 20px;
+          line-height: 20px;
+          border-radius: 5px;
+          color: #daa520;
+          border: 2px solid #daa520;
+          font-weight: bold;
+
+          &:hover {
+            color: black;
+            background-color: #daa520;
+          }
+        }
       }
     }
   }
@@ -80,28 +109,61 @@ $Varela_round: "Varela Round", sans-serif;
 
 // ---------- ---------- ----------
 
-// Desktops, large screens          –> 1025px — 1200px
+@media (max-width: 1500px) {
+  .coursesCard_container {
+    .col_2{
+      .content{
+        .syllabus{
+          // font-size: 0.7rem;
+          li {
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
 
+}
+@media (max-width: 1330px) {
+  .coursesCard_container {
+    .col_2{
+      .content{
+        .syllabus{
+          font-size: 1rem;
+          // li {
+          //   line-height: 1.5rem;
+          // }
+        }
+      }
+    }
+  }
+
+}
+
+// Desktops, large screens          –> 1025px — 1200px
 @media (max-width: $large) {
   .coursesCard_container {
-    padding: 10px;
+    padding: 1rem;
     .col_1 {
+
       video {
-        border-radius: 50px 0 0 50px;
+        border-radius: 20px 0 0 20px;
       }
     }
     .col_2 {
-      .detail {
-        margin-left: 50px;
-        font-size: 18px;
-        line-height: 30px;
-      }
+      .content {
+        .detail {
+          // margin-left: 50px;
+          font-size: 1.3rem;
+          // line-height: 30px;
+        }
 
-      .syllabus {
-        margin-top: 10px;
-        margin-left: 65px;
-        line-height: 20px;
-        font-size: 15px;
+        .syllabus {
+          // margin-top: 10px;
+          // margin-left: 65px;
+          // line-height: 20px;
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -113,27 +175,33 @@ $Varela_round: "Varela Round", sans-serif;
 
 @media (max-width: $small) {
   .coursesCard_container {
-    padding: 15px;
+    padding: 1rem;
     flex-direction: column;
     gap: 10px;
 
     .col_1 {
       video {
-        border-radius: 50px 50px 0 0;
+        border-radius: 20px 20px 0 0;
       }
     }
     .col_2 {
-      .detail {
-        margin-left: 50px;
-        font-size: 18px;
-        line-height: 30px;
-      }
+      .content {
+        .detail {
+          // margin-left: 50px;
+          // font-size: 18px;
+          // line-height: 30px;
+        }
 
-      .syllabus {
-        margin-top: 10px;
-        margin-left: 65px;
-        line-height: 20px;
-        font-size: 15px;
+        .syllabus {
+          // margin-top: 10px;
+          // margin-left: 65px;
+          // line-height: 20px;
+          // font-size: 15px;
+
+          li {
+            line-height: 2rem;
+          }
+        }
       }
     }
   }
@@ -146,7 +214,7 @@ $Varela_round: "Varela Round", sans-serif;
 @media (max-width: $tablets) {
   .coursesCard_container {
     flex-direction: column;
-    padding: 20px;
+    padding: 1.5rem;
     border-radius: 30px;
 
     .col_1 {
@@ -154,6 +222,20 @@ $Varela_round: "Varela Round", sans-serif;
 
       video {
         border-radius: 20px 20px 0 0;
+      }
+    }
+
+    .col_2 {
+      .content {
+        .detail {
+          font-size: 2rem;
+        }
+        .syllabus {
+          font-size: 1.2rem;
+          li {
+            line-height: 2rem;
+          }
+        }
       }
     }
   }
@@ -166,21 +248,29 @@ $Varela_round: "Varela Round", sans-serif;
   .coursesCard_container {
     gap: 20px;
     .col_2 {
+      padding-left: 0;
+      padding: 1rem;
       gap: 20px;
-      .detail {
-        text-align: center;
+      .content {
         margin-left: 0;
-        font-size: 18px;
-        line-height: 30px;
-      }
+        .detail {
+          text-align: center;
+          margin-left: 0;
+          font-size: 1.2rem;
+          line-height: 2rem;
 
-      .syllabus {
-        margin-top: 10px;
-        margin-left: 20px;
-        line-height: 20px;
-        font-size: 15px;
+          .old {
+            font-size: 1rem;
+          }
+        }
+
+        .syllabus {
+          margin-top: 10px;
+          margin-left: 20px;
+          line-height: 20px;
+          font-size: 15px;
+        }
       }
-      
     }
   }
 }

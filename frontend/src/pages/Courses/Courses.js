@@ -1,18 +1,17 @@
 import React from "react";
 import "./courses.scss";
-import {CoursesData} from "./CoursesData";
+import { CoursesData } from "../../data/CoursesData";
 import CoursesCard from "../../components/Course Card/CourseCard";
+import PreRegistration from "../../components/PreRegistration/PreRegistration";
 
 const sample_img = "./assets/images/sample_image_1.png";
 
 const Courses = () => {
   return (
     <div className="courses_container">
-
       <div className="header">
-
         <img src={sample_img} alt="img" />
-      
+
         <div className="subDiv">
           <div className="content">
             <h1>PREMINUM COURSES</h1>
@@ -25,30 +24,24 @@ const Courses = () => {
         </div>
       </div>
 
-      <div className="demat">
-        <div className="content">
-          <h1>OPEN FREE DEMAT ACCOUNT WITH IIFL</h1>
-          <button className="button"> Open an Account</button>
-          <div className="hr"></div>
-        </div>
-      </div>
+      <PreRegistration/>
 
       <div className="courses">
-        {
-          CoursesData.map((course, index) => {
-            return (
-              <CoursesCard
-                key={index}
-                video={course.video} 
-                duration={course.duration}
-                online={course.online}
-                offline={course.offline} 
-                content={course.content}
-                path={course.path}
-              />
-            )
-          })
-        }
+        {CoursesData.map((course, index) => {
+          return (
+            <CoursesCard
+              key={index}
+              video={course.video}
+              duration={course.duration}
+              old_online={course.old_online}
+              new_online={course.new_online}
+              old_offline={course.old_offline}
+              new_offline={course.new_offline}
+              content={course.content}
+              path={course.path}
+            />
+          );
+        })}
       </div>
     </div>
   );

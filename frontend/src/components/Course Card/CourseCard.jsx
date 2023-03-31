@@ -1,31 +1,33 @@
 import React from "react";
 import "./courseCard.scss";
 
-const CoursesCard = ({ video, duration, online, offline, content, path }) => {
+const CoursesCard = (props) => {
   return (
     <div className="coursesCard_container">
       <div className="col_1">
-        <video src={video} controls={false} autoPlay loop muted></video>
+        <video src={props.video} controls={false} autoPlay loop muted></video>
       </div>
 
       <div className="col_2">
-        <div className="detail">
-          <b>Duration : </b> {duration} <br />
-          <b>Online : </b> {online} <br />
-          <b>Offline : </b> {offline} <br />
-        </div>
+        <div className="content">
+          <div className="detail">
+            <b>Duration : </b> {props.duration} <br />
+            <b>Online : </b> <span className="old">{props.old_online}</span> {props.new_online} <br />
+            <b>Offline : </b> <span className="old">{props.old_offline}</span> {props.new_offline} <br />
+          </div>
 
-        <div className="syllabus">
-          <ul>
-            {content.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="sub_btn">
-          <a href={path} target="_blank">
-            <button>Join Now</button>
-          </a>
+          <div className="syllabus">
+            <ul>
+              {props.content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="sub_btn">
+            <a href={props.path} target="_blank" rel="noreferrer">
+              <button >Enroll Now</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

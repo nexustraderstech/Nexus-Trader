@@ -1,38 +1,28 @@
-import React from 'react';
-import './meetTeam.scss';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import React from "react";
+import "./meetTeam.scss";
 
-const MeetTeam = ({
-  img,
-  Aorder,
-  cap1,
-  cap2,
-  smtxt1,
-  smtxt2,
-  subtitle,
-  text,
-}) => {
+const instagram = "./assets/images/instagram.png";
+const linkedin = "./assets/images/linkedin.png";
+
+const MeetTeam = (props) => {
   return (
-    <div className='Mttcard'>
-      <img src={img} style={{ order: Aorder }} alt='' />
+    <div className="Mttcard">
+      <div className="MttImg" style={{ order: props.Img_Order }}>
+        <img src={props.img}  alt="" />
+      </div>
 
-      <div className='MttInfo'>
+      <div className="MttInfo" style={{ order: props.Info_Order }}>
         <h3>
-          {cap1}
-          <span className='small_text'>{smtxt1} </span>
-          {cap2}
-          <span className='small_text'>{smtxt2} </span>
+          {props.cap1}
+          <span className="small_text">{props.smtxt1} </span>
+          {props.cap2}
+          <span className="small_text">{props.smtxt2} </span>
         </h3>
-        <p className='subTitle'>{subtitle}</p>
-        <p className='text'>{text}</p>
-        <div className='icon-grp'>
-          <span className='icon'>
-            <InstagramIcon />
-          </span>
-          <span className='icon'>
-            <LinkedInIcon />
-          </span>
+        <p className="subTitle">{props.subtitle}</p>
+        <p className="text">{props.text}</p>
+        <div className="icon_grp">
+          <a href={props.instagram} target="_blank" rel="noreferrer"> <img src={instagram} alt="instagram" /> </a>
+          <a href={props.linkedin} target="_blank" rel="noreferrer"> <img src={linkedin} alt="linkedin" /> </a>
         </div>
       </div>
     </div>
