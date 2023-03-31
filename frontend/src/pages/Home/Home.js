@@ -1,13 +1,11 @@
 import React from 'react';
 import './home.scss';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import Card from '../../components/Home Cards/Card';
-import Demat from "../../components/Demat/Demat";
+import Demat from '../../components/Demat/Demat';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-// import CoursesSlider from '../../components/Slider/CoursesSlider';
-// import TestoSwiper from '../../components/Slider/TestoSwiper';
-import CourseSlider from "../../components/CourseSwiperSlider/CourseSwiperSlider";
-import TestoSlider from "../../components/TestimonialsSwiperSlider/TestiSwiperSlider";
+import CourseSlider from '../../components/CourseSwiperSlider/CourseSwiperSlider';
+import TestoSlider from '../../components/TestimonialsSwiperSlider/TestiSwiperSlider';
 
 const logo_with_signature = './assets/images/logo_with_signature.png';
 const sujoy_hitesh_2 = './assets/images/sujoy_hitesh_2.jpg';
@@ -89,18 +87,18 @@ const Home = () => {
     // },
     {
       id: 1,
-      number: "14+",
-      title: "Number of Batches",
+      number: '14+',
+      title: 'Number of Batches',
     },
     {
       id: 2,
-      number: "200+",
-      title: "Number of Students",
+      number: '200+',
+      title: 'Number of Students',
     },
     {
       id: 3,
-      number: "500+",
-      title: "Hours of Teaching",
+      number: '500+',
+      title: 'Hours of Teaching',
     },
   ];
 
@@ -109,20 +107,18 @@ const Home = () => {
       {/*header*/}
 
       <div className='home_header'>
-        <div className="subDiv_1">
-        <h1>NEXUS TRADERS</h1>
-        <h2>Turning Wealth Into Empire</h2>
-        <p>
-          We at Nexustraders provide you with all 
-          the elements required to become an elite
-          trader and investor in the stock market 
-          in the most simple methods, personally 
-          backtested by us.
-        </p>
-        <Link to="/courses">
-          <button className="btn">Enroll Now</button>
-        </Link>
-      </div>
+        <div className='subDiv_1'>
+          <h1>NEXUS TRADERS</h1>
+          <h2>Turning Wealth Into Empire</h2>
+          <p>
+            We at Nexustraders provide you with all the elements required to
+            become an elite trader and investor in the stock market in the most
+            simple methods, personally backtested by us.
+          </p>
+          <Link to='/courses'>
+            <button className='btn'>Enroll Now</button>
+          </Link>
+        </div>
 
         <div className='subDiv_2'>
           <div className='col_1'>
@@ -144,8 +140,8 @@ const Home = () => {
 
       {/*courses*/}
 
-      <div className="home_courses">
-        <div className="col_1">
+      <div className='home_courses'>
+        <div className='col_1'>
           <h2>Courses</h2>
           <p>
             A complete course designed specifically for you to attain the
@@ -154,13 +150,13 @@ const Home = () => {
             become financially free. At the end of the course, you will be able
             to trade daily and make profits in real-time.
           </p>
-          <Link to="/courses">
-            <button className="button">Enroll Now</button>
+          <Link to='/courses'>
+            <button className='button'>Enroll Now</button>
           </Link>
         </div>
 
-        <div className="col_2">
-          <div className="slider">
+        <div className='col_2'>
+          <div className='slider'>
             <CourseSlider />
           </div>
         </div>
@@ -172,9 +168,9 @@ const Home = () => {
 
       {/*testimonials*/}
 
-      <div className="home_testi">
+      <div className='home_testi'>
         <h2>Testimonials</h2>
-        <div className="slider">
+        <div className='slider'>
           <TestoSlider />
         </div>
       </div>
@@ -189,7 +185,7 @@ const Home = () => {
         </div>
         <div className='bottom'>
           {stats_data.map((item, index) => (
-            <div key={index} className="item">
+            <div key={index} className='item'>
               <h3>{item.number}</h3>
               <p>{item.title}</p>
             </div>
@@ -199,23 +195,23 @@ const Home = () => {
 
       {/*Visions*/}
 
-      <div className="home_visions">
-        <div className="col_1">
+      <div className='home_visions'>
+        <div className='col_1'>
           <video
             src={smaple_vid}
             controls={false}
             autoPlay
             loop
             muted
-            width={"60%"}
+            width={'60%'}
           ></video>
           <p>
-            A Few Months Of Learning <br />{" "}
-            <span style={{ color: "#daa520" }}> How To Trade </span> <br /> Can
+            A Few Months Of Learning <br />{' '}
+            <span style={{ color: '#daa520' }}> How To Trade </span> <br /> Can
             Produce A Lifetime Of Freedom
           </p>
         </div>
-        <div className="col_2">
+        <div className='col_2'>
           <h2>Vision</h2>
           <p>
             We aim to popularize the concepts of stock trading and investing to
@@ -235,8 +231,8 @@ const Home = () => {
       */}
 
       {/*About Us*/}
-      <div className="home_about">
-        <div className="col_1">
+      <div className='home_about'>
+        <div className='col_1'>
           <h2>
             Mst. Hitesh Gadling & <br /> Mst. Sujoy Bhattacharya
           </h2>
@@ -247,21 +243,21 @@ const Home = () => {
             the aim is to popularize the concept of stock trading & investing to
             enable the youth to benefit from it.
           </p>
-          <Link to="/about">
+          <Link to='/about'>
             <button>
               To Know More
               <ArrowForwardIosIcon
                 style={{
-                  backgroundColor: "transparent",
-                  fontSize: "1rem",
-                  color: "#daa520",
+                  backgroundColor: 'transparent',
+                  fontSize: '1rem',
+                  color: '#daa520',
                 }}
               />
             </button>
           </Link>
         </div>
-        <div className="col_2">
-          <img src={sujoy_hitesh_2} alt="" />
+        <div className='col_2'>
+          <img src={sujoy_hitesh_2} alt='' />
         </div>
       </div>
     </div>

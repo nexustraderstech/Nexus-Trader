@@ -3,12 +3,12 @@ $h2_fs: 3rem;
 $medium_fs: 1.2rem;
 $normal_fs: 1rem;
 
-$Cinzel: "Cinzel", serif;
-$VarelaRound: "Varela Round", sans-serif;
+$Cinzel: 'Cinzel', serif;
+$VarelaRound: 'Varela Round', sans-serif;
 
-$home_sample_img_1: "..//..//..//public//assets//images//home_sample_img_1.png";
-$home_sample_img_2: "..//..//..//public//assets//images//home_sample_img_2.png";
-$home_sample_img_3: "..//..//..//public//assets//images//sample_image_3.png";
+$home_sample_img_1: '..//..//..//public//assets//images//home_sample_img_1.png';
+$home_sample_img_2: '..//..//..//public//assets//images//home_sample_img_2.png';
+$home_sample_img_3: '..//..//..//public//assets//images//sample_image_3.png';
 
 // ---------- ---------- ----------
 
@@ -125,7 +125,7 @@ $mobile: 480px;
         font-size: $h2_fs;
       }
 
-      p{
+      p {
         width: 70%;
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -147,7 +147,7 @@ $mobile: 480px;
       align-items: center;
       justify-content: center;
 
-      .slider{
+      .slider {
         width: 100%;
       }
     }
@@ -242,7 +242,7 @@ $mobile: 480px;
       align-items: center;
       gap: 30px;
 
-      h2{
+      h2 {
         font-size: $h2_fs;
       }
 
@@ -268,7 +268,7 @@ $mobile: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     .col_1 {
       border-left: 3px solid white;
       // border: 1px solid white;
@@ -318,14 +318,14 @@ $mobile: 480px;
 
 // @media only screen and (min-width: $tablets) and (max-width: $small) {
 @media (max-width: $small) {
-  .container_home{
+  .container_home {
     .home_header {
       .subDiv_2 {
         display: flex;
         flex-direction: column;
         .col_1 {
           width: 100%;
-          img{
+          img {
             width: 30%;
           }
         }
@@ -338,7 +338,7 @@ $mobile: 480px;
     .home_courses {
       padding: 1rem;
       .col_1 {
-        p{
+        p {
           width: 90%;
           font-size: 1rem;
         }
@@ -353,29 +353,29 @@ $mobile: 480px;
 
 // @media only screen and (min-width: $mobile) and (max-width: $tablets) {
 @media (max-width: $tablets) {
-  .container_home{
+  .container_home {
     .home_courses {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 1rem;
-      .col_1{
+      .col_1 {
         width: 100%;
       }
-      .col_2{
+      .col_2 {
         width: 100%;
-        .slider{
+        .slider {
           width: 70%;
         }
       }
     }
-    
+
     .home_stats {
       .top {
         font-size: 2rem;
       }
       .bottom {
-        h3{
+        h3 {
           font-size: 2.5rem;
         }
       }
@@ -383,11 +383,11 @@ $mobile: 480px;
 
     .home_visions {
       flex-direction: column;
-      .col_2{
+      .col_2 {
         order: 1;
         width: 100%;
       }
-      .col_1{
+      .col_1 {
         order: 2;
         width: 100%;
       }
@@ -395,11 +395,11 @@ $mobile: 480px;
 
     .home_about {
       flex-direction: column;
-      .col_1{
+      .col_1 {
         order: 2;
         width: 90%;
       }
-      .col_2{
+      .col_2 {
         order: 1;
         width: 90%;
         border-left: 3px solid white;
@@ -415,33 +415,33 @@ $mobile: 480px;
 // Mobile devices                   –> 320px — 480px
 
 // @media only screen and (min-width: $mobile) and (max-width: $tablets) {
-@media(max-width: $tablets) {
-  .container_home{
+@media (max-width: $tablets) {
+  .container_home {
     .home_header {
       .subDiv_1 {
         padding: 2rem;
-        h1{
+        h1 {
           text-align: center;
+          font-size: 3rem;
         }
       }
 
       .subDiv_2 {
-        .col_1{
-          img{
+        .col_1 {
+          img {
             width: 60%;
           }
         }
-        .col_2{
+        .col_2 {
           display: flex;
           flex-direction: column;
-          
         }
       }
     }
 
     .home_courses {
-      .col_2{
-        .slider{
+      .col_2 {
+        .slider {
           width: 90%;
         }
       }
@@ -449,15 +449,14 @@ $mobile: 480px;
 
     .home_about {
       padding: 1rem;
-      .col_1{
+      .col_1 {
         padding: 2rem;
         width: 90%;
-        p{
+        p {
           width: 100%;
         }
-
       }
-      .col_2{
+      .col_2 {
         padding: 2rem;
         justify-content: left;
         align-items: center;
