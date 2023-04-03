@@ -16,8 +16,6 @@ const Navbar = () => {
     { name: 'Home', navLink: '/' },
     { name: 'About us', navLink: '/about' },
     { name: 'Courses', navLink: '/courses' },
-    { name: 'Blog', navLink: '/blog' },
-    { name: 'Testimonial', navLink: '/testimonial' },
   ];
   return (
     <div>
