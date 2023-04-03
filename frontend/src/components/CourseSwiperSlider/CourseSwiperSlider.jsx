@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 
 const platinum_course = "./assets/videos/platinum_course_vid.mp4";
 const advanced_course = "./assets/videos/advanced_course_vid.mp4";
+const forex_course = "./assets/videos/forex_campaign_vid.mp4";
 
 export default function App() {
   return (
@@ -50,6 +51,17 @@ export default function App() {
           <Link to="/courses">
             <video
               src={advanced_course}
+              controls={false}
+              autoPlay
+              loop
+              muted
+            ></video>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to="/courses">
+            <video
+              src={forex_course}
               controls={false}
               autoPlay
               loop

@@ -12,8 +12,20 @@ const CoursesCard = (props) => {
         <div className="content">
           <div className="detail">
             <b>Duration : </b> {props.duration} <br />
-            <b>Online : </b> <span className="old">{props.old_online}</span> {props.new_online} <br />
-            <b>Offline : </b> <span className="old">{props.old_offline}</span> {props.new_offline} <br />
+            {
+              props.new_online !== "₹.0" ? (
+                <>
+                  <b>Online : </b> <span className="old">{props.old_online}</span> {props.new_online} <br />
+                </>
+              ) : null 
+            }
+            {
+              props.new_offline !== "₹.0" ? (
+                <>
+                <b>Offline : </b> <span className="old">{props.old_offline}</span> {props.new_offline} <br />
+                </>
+              ) : null 
+            }
           </div>
 
           <div className="syllabus">

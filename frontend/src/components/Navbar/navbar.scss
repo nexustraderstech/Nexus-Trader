@@ -23,6 +23,7 @@ $FontSizeNormalText: 1.2rem;
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  color: white;
 
   // height: auto;
   height: 100px;
@@ -75,6 +76,8 @@ $FontSizeNormalText: 1.2rem;
     display: none;
   }
 }
+
+// ---------- ---------- ----------
 
 .nav_expand {
   z-index: 100;
@@ -143,6 +146,8 @@ $FontSizeNormalText: 1.2rem;
   }
 }
 
+// ---------- ---------- ----------
+
 // Small screens, laptops           –> 769px — 1024px
 @media (max-width: $small) {
   .nav {
@@ -169,4 +174,3 @@ $FontSizeNormalText: 1.2rem;
 
 // Mobile devices                   –> 320px — 480px
 
-// ---------- ---------- ----------
