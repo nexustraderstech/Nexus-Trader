@@ -49,13 +49,13 @@ export const CoursesData = [
     old_offline: " ₹. 13,000/-",
     new_offline: " ₹. 11,800/-",
     content: [
-      "Complete Explanation of the Forex Market.",
-      "Basics of Candlestick Patterns.",
-      "Pric Action",
-      "Multiple Chart Patterns in the Market.",
-      "Risk Management.",
-      "Correlation.",
-      "How to trade on NFP."
+      "Complete Explanation of the Forex Market",
+      "Basics of Candlestick Patterns",
+      "Price Action",
+      "Multiple Chart Patterns in the Market",
+      "Risk Management",
+      "Correlation",
+      "How to trade on NFP"
     ],
     path: "https://forms.gle/2CDkHcsxuWcbLPkx9",
   },
