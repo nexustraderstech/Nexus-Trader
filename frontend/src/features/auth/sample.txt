@@ -5,7 +5,10 @@ import { NavLink } from 'react-router-dom';
 const Login = () => {
   return (
     <>
-      <div className='login-form'>
+      <div className='login_container'>
+        <div className="logo">
+          <img src="./assets/images/logo_with_signature.png" alt="" />
+        </div>
         <div className='box'>
           <form>
             <p>Login</p>
@@ -33,3 +36,5 @@ const Login = () => {
 };
 
 export default Login;
+
+
