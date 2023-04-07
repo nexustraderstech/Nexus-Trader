@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 const bimg = "./assets/images/home_sample_img_2.png';"
 
-const Login = () => {
+const SignUp = () => {
   return (
-    <div className="login_container">
-      <div className="login_div">
+    <div className="signup_container">
+      <div className="signup_div">
         <div className="logo" >
           <img src="./assets/images/logo_with_signature.png" alt="" />
         </div>
-        <div className="login_form">
+        <div className="signup_form">
           <h1>Snign Up</h1>
           <form>
               <div className='txt_field'>
@@ -55,4 +55,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignUp

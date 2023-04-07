@@ -116,16 +116,18 @@ $NexusGold: #daa520;
 
           button{
             // margin-top: 3rem;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 3rem;
             background-color: #141416;
             color: $NexusGold;
             border: none;
             font-size: 1rem;
-            border-radius: 5px;
+            border-radius: 10px;
+            font-weight: bold;
             // margin: auto;
             
             &:hover{
-              color: white;
+              color: black;
+              background: $NexusGold;
             }
           }
 
