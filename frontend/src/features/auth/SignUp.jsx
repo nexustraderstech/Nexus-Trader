@@ -1,5 +1,5 @@
 import React from 'react'
-import "./login.scss";
+import "./signUp.scss";
 import { NavLink } from 'react-router-dom';
 
 const bimg = "./assets/images/home_sample_img_2.png';"
@@ -12,8 +12,20 @@ const Login = () => {
           <img src="./assets/images/logo_with_signature.png" alt="" />
         </div>
         <div className="login_form">
-          <h1>Log In</h1>
+          <h1>Snign Up</h1>
           <form>
+              <div className='txt_field'>
+                <input name='name' type='text'  required/>
+                <label htmlFor='name'>Full Name</label>
+              </div>
+              <div className='txt_field'>
+                <input name='user_name' type='text'  required/>
+                <label htmlFor='user_name'>Username</label>
+              </div>
+              <div className='txt_field'>
+                <input name='p_num' type='tel'  required/>
+                <label htmlFor='p_num'>Contact Number</label>
+              </div>
               <div className='txt_field'>
                 <input name='email' type='email'  required/>
                 <label htmlFor='email'>Email</label>
@@ -26,10 +38,14 @@ const Login = () => {
                 <label htmlFor='ck_box'>Keep me Logged in</label>
                 <input id='ck_box' type='checkbox' />
               </div>
+              <div className='ck_box'>
+                <label htmlFor='ck_box'>Terms and Condition</label>
+                <input id='ck_box' type='checkbox' />
+              </div>
               <div className="center_div">
-                <button>Login</button>
+                <button>Sign Up</button>
                 <div className='signUp_text'>
-                  Don't have Account - <NavLink to='/signup'>SignUp</NavLink>
+                 Have an Account - <NavLink to='/signup'>Login</NavLink>
                 </div>
               </div>
             </form>
