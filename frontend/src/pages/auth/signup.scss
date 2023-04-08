@@ -1,18 +1,25 @@
 $home_sample_img_2: '..//..//..//public//assets//images//home_sample_img_2.png';
 $NexusGold: #daa520;
 
-*{
+* {
   transition: none;
 }
 
-.signup_container{
+.error {
+  color: red;
+}
+.sucess {
+  color: green;
+}
+
+.signup_container {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  .signup_div{
+
+  .signup_div {
     width: 50%;
     background-color: black;
     border-radius: 1rem;
@@ -22,29 +29,29 @@ $NexusGold: #daa520;
     // width:500px;
     // height: 250px;
 
-    .logo{
+    .logo {
       // border: 1px solid white;
       width: 40%;
       display: flex;
       justify-content: center;
       align-items: center;
-      
-      img{
+
+      img {
         width: 100%;
       }
     }
-    
-    .signup_form{
+
+    .signup_form {
       padding: 1rem;
       width: 50%;
       color: $NexusGold;
       // border: 1px solid white;
 
-      h1{
+      h1 {
         text-align: center;
       }
 
-      form{
+      form {
         // height: 100%;
         // border: 1px solid white;
         display: flex;
@@ -54,14 +61,13 @@ $NexusGold: #daa520;
         justify-content: center;
         gap: 1rem;
 
-       
-        .txt_field{
+        .txt_field {
           position: relative;
           border-bottom: 1px solid white;
           margin: 0.5rem 0;
           width: 100%;
 
-          input{
+          input {
             width: 100%;
             padding: 0 5px;
             height: 40px;
@@ -70,18 +76,19 @@ $NexusGold: #daa520;
             outline: none;
             color: white;
 
-            &:focus, &:valid {
+            &:focus,
+            &:valid {
               ~ label {
                 top: -5px;
               }
             }
           }
 
-          label{
+          label {
             position: absolute;
             top: 50%;
             left: 5px;
-            
+
             transform: translateY(-50%);
             font-size: 1rem;
             pointer-events: none;
@@ -95,16 +102,15 @@ $NexusGold: #daa520;
           //     }
           //   }
           // }
-          
         }
 
-        .ck_box{
-          input{
+        .ck_box {
+          input {
             margin-left: 2rem;
           }
         }
 
-        .center_div{
+        .center_div {
           // border: 1px solid white;
           width: 100%;
           display: flex;
@@ -115,7 +121,7 @@ $NexusGold: #daa520;
           padding: 1rem;
           gap: 1rem;
 
-          button{
+          button {
             // margin-top: 3rem;
             padding: 0.5rem 3rem;
             background-color: #141416;
@@ -125,23 +131,21 @@ $NexusGold: #daa520;
             border-radius: 10px;
             font-weight: bold;
             // margin: auto;
-            
-            &:hover{
+
+            &:hover {
               color: black;
               background: $NexusGold;
             }
           }
 
-          .signUp_text{
+          .signUp_text {
             border-bottom: 2px solid $NexusGold;
-            &:hover{
+            &:hover {
               color: white;
             }
           }
         }
       }
-
     }
   }
-
 }

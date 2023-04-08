@@ -1,13 +1,21 @@
 import express from 'express';
 const router = express.Router();
 import { User } from '../model/userSchema.js';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+dotenv.config();
 
 router.post('/register', async (req, res) => {
   try {
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(req.body.password, salt);
     const newUser = new User({
+      fullname: req.body.fullname,
       username: req.body.username,
+      contact: req.body.contact,
       email: req.body.email,
-      password: req.body.password,
+      password: hashedPassword,
     });
     const user = await newUser.save();
     res.status(200).json(user);
@@ -18,13 +26,21 @@ router.post('/register', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   try {
-    const user = await User.findOne({ username: req.body.username });
-    !user && res.status(400).json('Wrong Credentialsg');
+    const user = await User.findOne({ email: req.body.email });
+    !user && res.status(400).json('Wrong Credentials');
 
-    const validate = await User.findOne({ password: req.body.password });
-    !validate && res.status(400).json('Wrong Credentialsg');
+    const validate = await bcrypt.compare(req.body.password, user.password);
+    !validate && res.status(400).json('Wrong Credentials');
+
+    // Generate JWT token
+    const token = jwt.sign(
+      { id: user._id, email: user.email },
+      process.env.JWT_SECRET,
+      { expiresIn: '6d' }
+    );
+
     const { password, ...others } = user._doc;
-    res.status(200).json(others);
+    res.status(200).json({ ...others, token });
   } catch (error) {
     res.status(500).json(error);
   }

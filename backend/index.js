@@ -4,6 +4,8 @@ import path from 'path';
 import connectDatabase from './config/MongoDb.js';
 import authRoute from './routes/Auth.js';
 import userRoute from './routes/userRoutes.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 app.use(cors());

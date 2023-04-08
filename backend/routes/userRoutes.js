@@ -1,55 +1,76 @@
 import express from 'express';
 const router = express.Router();
 import { User } from '../model/userSchema.js';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 
 // To Update user :: status : working
 
-router.put('/:id', async (req, res) => {
-  if (req.body.userId === req.params._id) {
-    if (req.body.password === req.body.password) {
-      try {
-        const UpdatedUser = await User.findByIdAndUpdate(
-          req.params.id,
-          {
-            $set: req.body,
-          },
+router.put('/email/:email', async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.params.email });
+    if (user) {
+      const isPasswordCorrect = await bcrypt.compare(
+        req.body.password,
+        user.password
+      );
+      if (isPasswordCorrect) {
+        const updatedUser = await User.findOneAndUpdate(
+          { email: req.params.email },
+          { $set: req.body },
           { new: true }
         );
-        res.status(200).json(UpdatedUser);
-      } catch (err) {
-        res.status(500).json(err);
+        res.status(200).json(updatedUser);
+      } else {
+        res.status(401).json('Invalid password');
       }
+    } else {
+      res.status(404).json('User not found');
     }
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 
 // To Delete user :: status : Working
 
-router.delete('/:id', async (req, res) => {
-  if (req.body.userId === req.params._id) {
-    try {
-      await User.findByIdAndDelete(req.params.id);
-      res.status(200).json('User has been Deleted');
-    } catch (err) {
-      res.status(500).json(err);
+router.delete('/email/:email', async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.params.email });
+    if (user) {
+      const isPasswordCorrect = await bcrypt.compare(
+        req.body.password,
+        user.password
+      );
+      if (isPasswordCorrect) {
+        if (req.body.email === user.email.toString()) {
+          await User.findOneAndDelete({ email: req.params.email });
+          res.status(200).json('User has been deleted successfully');
+        } else {
+          res.status(401).json('You can delete only your own account');
+        }
+      } else {
+        res.status(401).json('Invalid password');
+      }
+    } else {
+      res.status(404).json('User not found');
     }
-  } else {
-    res.status(401).json('You can Delete only your Account');
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 
-// To Get user :: status : working
+// get a user  :: status : working
 
-router.get('/:id', async (req, res) => {
+router.get('/email/:email', async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
+    const user = await User.findOne({ email: req.params.email });
     const { password, ...other } = user._doc;
     res.status(200).json(other);
   } catch (err) {
     res.status(500).json(err);
   }
 });
-
 // To Get All User  :: status : working
 
 router.get('/', async (req, res) => {

@@ -39,3 +39,13 @@ Then :
 ```
 npm run dev
 ```
+
+Note : TO run backend successfully. Must create '.env' file, in '.env.' all Credentials are stored like
+
+```
+MONGO_URL='mongo_db_atlas_url'
+
+JWT_SECRET='jwt_secret_key'
+```
+
+This is sample one
