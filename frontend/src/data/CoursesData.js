@@ -6,8 +6,8 @@ export const CoursesData = [
     duration: " 8 weeks ",
     old_online: " ₹. 11,999/- ",
     new_online: " ₹. 9,599/- ",
-    old_offline: " ₹. 19,999/- ",
-    new_offline: " ₹. 16,999/- ",
+    old_offline: " ₹. 23,999/- ",
+    new_offline: " ₹. 19,999/- ",
     content: [
       "Basics of Stock Market",
       "Technical + Fundamental Analysis",
