@@ -5,7 +5,7 @@ const Demat = () => {
   return (
     <div className="demat">
       <div className="content">
-        <h2>Open FREE Demat Account with Zerodha</h2>
+        <h2>Open Demat Account with Zerodha</h2>
         <a
           href="https://zerodha.com/?c=TZ4645&s=CONSOLE"
           target="_blank"
