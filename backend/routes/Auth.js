@@ -27,10 +27,14 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
-    !user && res.status(400).json('Wrong Credentials');
+    if (!user) {
+      return res.status(400).json('Wrong Credentials');
+    }
 
     const validate = await bcrypt.compare(req.body.password, user.password);
-    !validate && res.status(400).json('Wrong Credentials');
+    if (!validate) {
+      return res.status(400).json('Wrong Credentials');
+    }
 
     // Generate JWT token
     const token = jwt.sign(
@@ -40,9 +44,9 @@ router.post('/login', async (req, res) => {
     );
 
     const { password, ...others } = user._doc;
-    res.status(200).json({ ...others, token });
+    return res.status(200).json({ ...others, token });
   } catch (error) {
-    res.status(500).json(error);
+    return res.status(500).json(error);
   }
 });
 

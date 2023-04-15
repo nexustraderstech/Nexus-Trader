@@ -10,7 +10,7 @@ const initialState = {
 
 export const signUpUser = createAsyncThunk('signUpUser', async (body) => {
   const result = await fetch('http://localhost:8080/api/auth/register', {
-    method: 'post',
+    method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     Authorization: localStorage.getItem('token'),
     body: JSON.stringify(body),

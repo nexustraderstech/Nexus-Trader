@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema(
       Unique: true,
     },
     contact: {
-      type: Number,
+      type: String,
       required: true,
       Unique: true,
     },
@@ -27,7 +27,6 @@ const UserSchema = new mongoose.Schema(
     },
     isAdmin: {
       type: Boolean,
-      required: true,
       default: false,
     },
   },

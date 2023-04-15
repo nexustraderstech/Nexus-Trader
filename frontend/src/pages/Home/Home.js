@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.scss';
+// import { selectUser } from '../../app/reducers/loginSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Card from '../../components/Home Cards/Card';
 import Demat from '../../components/Demat/Demat';
@@ -42,43 +44,6 @@ const Home = () => {
     },
   ];
 
-  // const swiper_card_data = [
-  //   {
-  //     id: 1,
-  //     data: 'courses',
-  //     card_data: [
-  //       {
-  //         id: 1,
-  //         img: 'assets/images/platinum_course.png',
-  //         title: 'Platinum Course',
-  //       },
-  //       {
-  //         id: 2,
-  //         img: './assets/images/advanced_course.png',
-  //         title: 'Advanced Course',
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     data: 'blogs',
-  //     card_data: [
-  //       {
-  //         id: 1,
-  //         img: 'assets/images/platinum_course.png',
-  //         title: 'Platinum Course',
-  //       },
-  //       {
-  //         id: 2,
-  //         img: './assets/images/advanced_course.png',
-  //         title: 'Advanced Course',
-  //       },
-  //     ],
-  //   },
-  // ];
-
-  // const [scrollPosition, setScrollPosition] = useState(0);
-
   const stats_data = [
     // {
     //   id: 1,
@@ -110,6 +75,7 @@ const Home = () => {
         <div className='subDiv_1'>
           <h1>NEXUS TRADERS</h1>
           <h2>Turning Wealth Into Empire</h2>
+
           <p>
             We at Nexustraders provide you with all the elements required to
             become an elite trader and investor in the stock market in the most

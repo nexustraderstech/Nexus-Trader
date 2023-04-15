@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './login.scss';
 import { NavLink } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../../app/reducers/loginSlice';
+import { useNavigate } from 'react-router-dom';
+import { selectError } from '../../app/reducers/loginSlice';
 
 const Login = () => {
   const [inputData, setInputData] = useState({
@@ -10,16 +12,18 @@ const Login = () => {
     password: '',
   });
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
+  const error = useSelector(selectError);
+  console.log(error);
   const HandleLogin = () => {
     dispatch(loginUser(inputData));
-    console.log('Success');
-    setInputData({ username: '', password: '' });
+    setInputData({ email: '', password: '' });
   };
   const HandleOnChange = (e) => {
     e.preventDefault();
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
+
   return (
     <div className='login_container'>
       <div className='login_div'>
@@ -28,6 +32,8 @@ const Login = () => {
         </div>
         <div className='login_form'>
           <h1>Log In</h1>
+          {/* <h3> {isReallyAdmin && isReallyAdmin}Log In</h3> */}
+          {/* <span onClick={() => dispatch(logout)}>logout</span> */}
           <form>
             <div className='txt_field'>
               <input
@@ -42,7 +48,7 @@ const Login = () => {
             <div className='txt_field'>
               <input
                 name='password'
-                type='password'
+                type='text'
                 required
                 value={inputData.password}
                 onChange={HandleOnChange}

@@ -4,7 +4,7 @@ const PostSchema = new mongoose.Schema(
   {
     image: {
       type: String,
-      required,
+      required: true,
     },
     author: {
       type: String,
@@ -22,6 +22,5 @@ const PostSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('Post', PostSchema);
 const Posts = mongoose.model('Posts', PostSchema);
-export { Posts };
+export default Posts;
