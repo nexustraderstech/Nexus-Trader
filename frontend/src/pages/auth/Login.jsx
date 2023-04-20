@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../../app/reducers/loginSlice';
 import { useNavigate } from 'react-router-dom';
-import { selectError } from '../../app/reducers/loginSlice';
 
 const Login = () => {
   const [inputData, setInputData] = useState({
@@ -13,8 +12,6 @@ const Login = () => {
   });
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const error = useSelector(selectError);
-  console.log(error);
   const HandleLogin = () => {
     dispatch(loginUser(inputData));
     setInputData({ email: '', password: '' });

@@ -5,10 +5,10 @@ import About from './pages/About/About';
 import Courses from './pages/Courses/Courses';
 import Home from './pages/Home/Home';
 import Blogs from './pages/Blogs/Blogs';
-import Blog from './pages/Blog/Blog';
 import Layout from './components/Layout';
 import Login from './pages/auth/Login';
 import SignUp from './pages/auth/SignUp';
+import PayForm from './pages/payment/PayForm';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/courses' element={<Courses />} />
             <Route path='/blog' element={<Blogs />} />
-            <Route path='/blogs/:id' element={<Blog />} />
+            <Route path='/pay' element={<PayForm />} />
           </Route>
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />

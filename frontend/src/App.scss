@@ -43,6 +43,9 @@ p {
 .app_container {
   width: 100%;
 }
+input::placeholder {
+  color: #fff;
+}
 
 @media (max-width: 1400px) {
   * {

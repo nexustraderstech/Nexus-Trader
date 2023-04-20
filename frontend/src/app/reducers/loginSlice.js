@@ -2,9 +2,11 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
   isAuthenticated: false,
-  user: null,
-  token: null,
-  isAdmin: false,
+  user: localStorage.getItem('user') ? localStorage.getItem('user') : null,
+  token: localStorage.getItem('token') ? localStorage.getItem('token') : null,
+  isAdmin: localStorage.getItem('isAdmin')
+    ? localStorage.getItem('isAdmin')
+    : null,
   isLoading: false,
   error: null,
 };
@@ -35,14 +37,7 @@ export const loginUser = createAsyncThunk(
       console.log(data);
       localStorage.setItem('token', data.token);
       localStorage.setItem('isAdmin', data.isAdmin);
-      localStorage.setItem(
-        'user',
-        JSON.stringify({
-          email: data.email,
-          fullname: data.fullname,
-          contact: data.contact,
-        })
-      );
+      localStorage.setItem('user', JSON.stringify(data));
       return data;
     } catch (error) {
       throw error.response?.data || { message: error.message };
@@ -74,6 +69,7 @@ const authSlice = createSlice({
         state.isLoading = false;
         state.error = null;
         state.isAdmin = action.payload.isAdmin;
+        // console.log(state.isAdmin);
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.isAuthenticated = false;
@@ -83,6 +79,7 @@ const authSlice = createSlice({
         state.error = action.payload
           ? action.payload.message
           : 'Login failed. Please try again.';
+        state.isAdmin = false;
       })
       .addCase(logout.fulfilled, (state) => {
         state.isAuthenticated = false;
@@ -100,5 +97,5 @@ export const selectIsAuthenticated = (state) => state.auth.isAuthenticated;
 export const selectUser = (state) => state.auth.user;
 export const selectToken = (state) => state.auth.token;
 export const selectIsLoading = (state) => state.auth.isLoading;
-// export const selectIsAdmin = (state) => state.auth.isAdmin;
+export const selectIsAdmin = (state) => state.auth.isAdmin;
 export const selectError = (state) => (state.auth ? state.auth.error : null);

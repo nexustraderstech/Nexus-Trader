@@ -1,19 +1,24 @@
-import React from "react";
-import "./courses.scss";
-import { CoursesData } from "../../data/CoursesData";
-import CoursesCard from "../../components/Course Card/CourseCard";
-import PreRegistration from "../../components/PreRegistration/PreRegistration";
-
-const sample_img = "./assets/images/sample_image_1.png";
+import React from 'react';
+import './courses.scss';
+import { CoursesData } from '../../data/CoursesData';
+import CoursesCard from '../../components/Course Card/CourseCard';
+import PreRegistration from '../../components/PreRegistration/PreRegistration';
+import axios from 'axios';
+const sample_img = './assets/images/sample_image_1.png';
 
 const Courses = () => {
-  return (
-    <div className="courses_container">
-      <div className="header">
-        <img src={sample_img} alt="img" />
+  const getAmount = (amt) => {
+    console.log(amt);
+    return amt;
+  };
 
-        <div className="subDiv">
-          <div className="content">
+  return (
+    <div className='courses_container'>
+      <div className='header'>
+        <img src={sample_img} alt='img' />
+
+        <div className='subDiv'>
+          <div className='content'>
             <h1>PREMINUM COURSES</h1>
             <p>
               A complete course designed specifically for you to learn to trade
@@ -24,9 +29,9 @@ const Courses = () => {
         </div>
       </div>
 
-      <PreRegistration/>
+      <PreRegistration />
 
-      <div className="courses">
+      <div className='courses'>
         {CoursesData.map((course, index) => {
           return (
             <CoursesCard
@@ -39,6 +44,7 @@ const Courses = () => {
               new_offline={course.new_offline}
               content={course.content}
               path={course.path}
+              getAmount={getAmount}
             />
           );
         })}
