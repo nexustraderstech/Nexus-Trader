@@ -10,26 +10,75 @@ const PayForm = () => {
     name: userData.fullname,
     email: userData.email,
     phone: userData.contact,
-    price: '6599',
+    price: '9599',
   });
   //   console.log(userData);
 
-  const handleSubmit = (event) => {
-    console.log(formData);
-    event.preventDefault();
-    CheckOutHandler();
-  };
-
   const handleOnChange = (event) => {
     const { name, value } = event.target;
-    setFormData((prevState) => ({ ...prevState, [name]: value }));
+    if (name === 'option') {
+      setFormData((prevState) => ({
+        ...prevState,
+        price: value,
+      }));
+    } else {
+      setFormData((prevState) => ({
+        ...prevState,
+        [name]: value,
+      }));
+    }
   };
 
-  const CheckOutHandler = async () => {
-    const { data } = await axios.post('http://localhost:8080/api/secure/pay', {
-      amount: formData.price,
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const {
+      data: { key },
+    } = await axios.get('http://localhost:8080/api/secure/getkey');
+    const {
+      data: { order },
+    } = await axios.post('http://localhost:8080/api/secure/pay', {
+      // amount: formData.price,
+      // formData,
+      amount: 1,
     });
-    console.log(data);
+
+    const options = {
+      key,
+      amount: order.amount,
+      currency: 'INR',
+      name: 'NexusTrader',
+      description: 'Learn Stock Maket with Us',
+      image: 'https://nexustraders.in/assets/images/logo.png',
+      order_id: order.id,
+      callback_url: 'http://localhost:8080/api/secure/paymentverification',
+      prefill: {
+        name: 'sameer',
+        contact: '9999999999',
+      },
+      notes: {
+        address: 'Razorpay Corporate Office',
+      },
+      theme: {
+        color: '#202020',
+      },
+    };
+    const razor = new window.Razorpay(options);
+    razor.open();
+    const response = await axios.post(
+      'http://localhost:8080/api/secure/paymentverification',
+      {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        price: formData.price,
+        razorpay_order_id: '',
+        razorpay_payment_id: '',
+        razorpay_signature: '',
+      }
+    );
+    response();
+    console.log(response);
   };
   return (
     <div>
@@ -79,7 +128,7 @@ const PayForm = () => {
               value={formData.price}
               onChange={handleOnChange}
             >
-              <option value='6599'>The Platinum course ₹ 9,599/- </option>
+              <option value='9599'>The Platinum course ₹ 9,599/- </option>
               <option value='6999'>The Advanced course ₹ 6,999/- </option>
               <option value='11800'>The Forex campaign : ₹ 11,800/- </option>
             </select>

@@ -40,9 +40,9 @@ app.use('/api/auth', authRoute);
 app.use('/api/users', userRoute);
 app.use('/api/blog', blogRoute);
 app.use('/api/secure', PaymentRoute);
-app.get('/api/getkey', (req, res) =>
-  res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
-);
+// app.get('/api/getkey', (req, res) =>
+//   res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
+// );
 const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`Server is running http://localhost:${PORT}.`);

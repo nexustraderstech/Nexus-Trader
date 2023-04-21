@@ -14,10 +14,10 @@ const CoursesCard = ({
   getAmount,
   CheckOutHandler,
 }) => {
-  const handleButton = () => {
-    // getAmount(new_online);
-    CheckOutHandler(getAmount(5000));
-  };
+  // const handleButton = () => {
+  //   // getAmount(new_online);
+  //   CheckOutHandler(getAmount(5000));
+  // };
   const navigate = useNavigate();
   return (
     <div className='coursesCard_container'>
@@ -52,7 +52,8 @@ const CoursesCard = ({
           </div>
           <div className='sub_btn'>
             <a href={path} target='_blank' rel='noreferrer'>
-              <button onClick={() => navigate('/pay')}>Enroll Now</button>
+              {/* <button onClick={() => navigate('/pay')}>Enroll Now</button> */}
+              <button>Enroll Now</button>
             </a>
           </div>
         </div>

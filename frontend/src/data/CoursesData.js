@@ -19,7 +19,7 @@ export const CoursesData = [
       'Live Trading Events',
       'Doubt sessions and Recordings',
     ],
-    // path: "https://forms.gle/nkoZeMa8u475buhz7",
+    path: 'https://forms.gle/nkoZeMa8u475buhz7',
   },
   {
     title: 'Advanced Courses',
@@ -37,7 +37,7 @@ export const CoursesData = [
       'Scalping strategy',
       'Commodity market ( includes doubt session)',
     ],
-    // path: "https://forms.gle/xEeTmRFmWzXDJM4PA",
+    path: 'https://forms.gle/xEeTmRFmWzXDJM4PA',
   },
   {
     title: 'Forex Campaign',
@@ -57,6 +57,6 @@ export const CoursesData = [
       'Correlation',
       'How to trade on NFP',
     ],
-    // path: "https://forms.gle/2CDkHcsxuWcbLPkx9",
+    path: 'https://forms.gle/2CDkHcsxuWcbLPkx9',
   },
 ];
